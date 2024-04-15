@@ -1,0 +1,10 @@
+.row{
+    border:2px solid black;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.col{
+    border: 2px solid red;
+    width: 100%;
+}
