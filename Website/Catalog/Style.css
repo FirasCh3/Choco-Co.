@@ -22,8 +22,7 @@
 .col .content{
     width: 100%;
     position: relative;
-    background: linear-gradient(#fff,#fff);
-    transition: all ease 3s;
+    transition: all 1s ease;
 }
 .col .content img{
     width: 100%;
@@ -37,7 +36,16 @@
     width: 103px;
     height: 38px;
     background-color: transparent;
-    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+.col .content button:hover{
+    background-color: white;
+}
+.col .content button:hover a{
+    color: black;
 }
 .col .content:hover button{
     opacity: 1;
@@ -50,7 +58,7 @@
     height: 100%;
 }
 .col .content:hover span{
-    background: linear-gradient(rgba(158, 155, 125, 0.12), rgba(255, 255, 255, 1));
+    backdrop-filter: blur(2px);
 }
 .col .content-text{
     width: 100%;
@@ -71,4 +79,9 @@
 }
 .col p{
     display: inline-block;
+    color: black;
+}
+.col a{
+    color: white;
+    text-decoration: none;
 }
