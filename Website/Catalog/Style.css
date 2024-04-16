@@ -15,7 +15,11 @@
     
 }
 .col{
+    border: 2px solid red;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
 }
 .col .content{
     width: 100%;
@@ -24,7 +28,7 @@
     transition: all ease 3s;
 }
 .col .content img{
-    width: 100%;  
+    width: 100%;
 }
 .col .content button{
     position: absolute;
