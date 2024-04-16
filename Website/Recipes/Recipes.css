@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+html{
+    font-family: "Abhaya Libre", serif;
+    overflow-x: hidden;  
+}
+body{
+    color: white;
+    background-color: black;
+}
+
+
+header{ 
+    background-image: url("img/LETSCOOK.jpg");
+    background-position: center;
+    background-size: contain;   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 span{
+    font-size: 100px;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+
+
+.ABOUT_THE_RECIPE{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+.ABOUT_THE_RECIPE p{
+    width: 400px;
+}
+.line{
+    background-color: white;
+    width: 250px;
+    height: 2px;
+    border-radius: 5px;
+    margin: 11px;
+}
+
+
+.MAIN_IMAGE{
+    height: 70vh;
+}
+.MAIN_IMAGE img{
+    height: 70vh;
+    object-fit: contain; 
+}
+
+
+.row{
+    height: 80vh;
+    display: flex;
+}
+.col1 , .col2{
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+.line2{
+    background-color: white;
+    width: 220px;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;    
+}
+.col1 .line2{
+    right: -10px;
+}
+.col2 .line2{
+    left: -10px;
+}
+.col1 p , .col2 p { 
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.col1 h2{
+    padding-top: 5px;
+    padding-left: 380px;
+    padding-bottom: 3px;
+}
+.col2 h2{
+    padding-top: 5px;
+    padding-right: 450px;
+    padding-bottom: 3px;
+}
+.col1 img , .col2 img{
+    height: 70vh;
+}
+
+
+
+.Video{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Video .line{
+    width: 150px;
+}
+.Video .vid{
+    margin-top: 30px;
+    width: 90%;
+    height: 80%;
+}
