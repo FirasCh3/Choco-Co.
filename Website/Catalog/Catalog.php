@@ -1,5 +1,5 @@
 <?php
-    require_once "../connexion.php";
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +9,7 @@
     <title>Document</title>
     <script src="Script.js"></script>
     <link href="Style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--
@@ -35,13 +36,18 @@
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_assoc($result)){
                 echo "<div class='col'>
-                        <img src='x'></img>
+                        <div class='content'>
+                            <img src='../../assets/product_images/test.jpg'>
+                            <span></span>
+                            <button>Add to cart</button>
+                        </div>
                         <p>$row[Product_name]</p>
                         <p>$row[Product_price]</p>
+                        
                     </div>";
             }
 
-                
+            mysqli_close($conn);    
         ?>
     </div>
     </section>

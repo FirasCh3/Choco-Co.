@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "abhaya libre";
 }
 .row{
     border:2px solid black;
@@ -14,13 +15,40 @@
     
 }
 .col{
-    border: 2px solid red;
     width: 30%;
-    
-    
 }
-.col img{
+.col .content{
     width: 100%;
+    position: relative;
+    background: linear-gradient(#fff,#fff);
+    transition: all ease 3s;
+}
+.col .content img{
+    width: 100%;  
+}
+.col .content button{
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    opacity: 0;
+    border: 1px solid white;
+    width: 103px;
+    height: 38px;
+    background-color: transparent;
+    color: white;
+}
+.col .content:hover button{
+    opacity: 1;
+}
+.col .content span{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+.col .content:hover span{
+    background: linear-gradient(rgba(158, 155, 125, 0.12), rgba(255, 255, 255, 1));
 }
 .title{
     border:2px solid black;
