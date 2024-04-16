@@ -37,13 +37,13 @@
             while($row = mysqli_fetch_assoc($result)){
                 echo "<div class='col'>
                         <div class='content'>
-                            <img src='../../assets/product_images/1d0d7ca0d7904d5d8804813bc67ce07e.jpg'>
+                            <img src='../../assets/product_images/Frame1.png'>
                             <span></span>
-                            <button>Add to cart</button>
+                            <button onclick='addtoCart($row[Product_id])'>Add to cart</button>
                         </div>
-                        <div class='col-text'>
+                        <div class='content-text'>
                             <p>$row[Product_name]</p>
-                            <p>$row[Product_price]</p>
+                            <p>$row[Product_price]$</p>
                         </div>
                     </div>";
             }
