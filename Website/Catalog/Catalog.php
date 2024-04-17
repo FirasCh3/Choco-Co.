@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
     <script src="Script.js"></script>
     <link href="Style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--
-        header
-        -->
+    <header>
+        <!--navbar-->
+        <h1>ENJOY</h1>
+        <h1>THE CHOCOLATE</h1>
+    </header>
     <section>
     <div class='title'>
         <h1>

@@ -4,6 +4,21 @@
     box-sizing: border-box;
     font-family: "abhaya libre";
 }
+header{
+    background-image: url("../../assets/product_images/1d0d7ca0d7904d5d8804813bc67ce07e.jpg");
+    margin-bottom: 30px;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header h1{
+    text-align: center;
+    color: white;
+}
 .row{
     display: flex;
     width: 90%;
