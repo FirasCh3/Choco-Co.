@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "abhaya libre";
+    overflow-x: hidden;
 }
 header{
-    background-image: url("../../assets/product_images/193a47a9-9eec-42fc-ad55-82fdb7102606.jpg");
+    background-image: url("../../assets/product_images/pic.png");
     margin-bottom: 30px;
     background-size: cover;
+    background-position:center;
     width: 100vw;
     height: 78vh;
     display: flex;
@@ -18,6 +20,7 @@ header{
 header h1{
     text-align: center;
     color: white;
+    
 }
 .row{
     display: flex;
