@@ -15,29 +15,37 @@ body{
     background-color: black;
 }
 
+/*---------------------------------------*/
 
 header{ 
     background-image: url("img/LETSCOOK.jpg");
     background-position: center;
-    background-size: contain;   
-    height: 100vh;
+    background-size: cover;   
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1 span{
+h1{
     font-size: 100px;
 }
-h1{
-    font-size: 50px;
-}
-h2{
-    font-size: 35px;
+h1 span{
+    font-size: 170px;
 }
 
+/*---------------------------------------*/
+
+h2{
+    font-size: 60px;
+}
+p{
+    font-size: 20px;
+}
+
+/*---------------------------------------*/
 
 .ABOUT_THE_RECIPE{
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,68 +53,100 @@ h2{
     text-align: center; 
 }
 .ABOUT_THE_RECIPE p{
-    width: 400px;
+    width: 800px;
 }
 .line{
     background-color: white;
-    width: 250px;
+    width: 410px;
     height: 2px;
     border-radius: 5px;
-    margin: 11px;
+    margin: 15px;
 }
 
+/*---------------------------------------*/
 
 .MAIN_IMAGE{
-    height: 70vh;
-}
-.MAIN_IMAGE img{
-    height: 70vh;
-    object-fit: contain; 
-}
-
-
-.row{
     height: 80vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.MAIN_IMAGE img{
+    width: 1200px;
+    height: 85%;
+}
+
+/*---------------------------------------*/
+
+.row{
+    height: 60vh;
+    display: flex;
+    padding-bottom:40px ;
+}
+
 .col1 , .col2{
     flex: 1;
     text-align: center;
     position: relative;
 }
+.col11 , .col22{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col11 img{
+    height: 100%;
+    width: 100%;
+    padding-right: 345px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col22 img{
+    height: 100%;
+    width: 100%;
+    padding-left: 345px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .line2{
     background-color: white;
-    width: 220px;
     height: 2px;
     border-radius: 5px;
     position: absolute;    
 }
 .col1 .line2{
-    right: -10px;
+    right: 0;
+    left:600px;
 }
 .col2 .line2{
-    left: -10px;
+    left: 0;
+    right:633px;
 }
-.col1 p , .col2 p { 
+
+.col1 p { 
     padding-top: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 150px;
+    padding-right: 50px;
+}
+.col2 p{
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 150px;
 }
 .col1 h2{
     padding-top: 5px;
-    padding-left: 380px;
+    padding-left: 550px;
     padding-bottom: 3px;
 }
 .col2 h2{
     padding-top: 5px;
-    padding-right: 450px;
+    padding-right: 700px;
     padding-bottom: 3px;
 }
-.col1 img , .col2 img{
-    height: 70vh;
-}
 
-
+/*---------------------------------------*/
 
 .Video{
     height: 90vh;
