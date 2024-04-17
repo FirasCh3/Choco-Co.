@@ -30,10 +30,10 @@
 .col .content button{
     position: absolute;
     top: 45%;
-    left: 37%;
+    left: 34%;
     opacity: 0;
     border: 1px solid white;
-    width: 103px;
+    width: 120px;
     height: 38px;
     background-color: transparent;
     font-size: 20px;
@@ -73,9 +73,10 @@
     border:2px solid black;
     width: 90%;
     margin: auto;
-}
-.title h1{
-    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .col p{
     display: inline-block;
@@ -85,3 +86,4 @@
     color: white;
     text-decoration: none;
 }
+

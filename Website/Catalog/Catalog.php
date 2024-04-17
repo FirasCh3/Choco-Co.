@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +36,7 @@
                         <div class='content'>
                             <img src='../../assets/product_images/Frame1.png'>
                             <span></span>
-                            <button><a href=order.php?productId=$row[Product_id]>Order now<a></button>
+                            <button><a href=Order.php?productId=$row[Product_id]>Order now<a></button>
                         </div>
                         <div class='content-text'>
                             <p>$row[Product_name]</p>
@@ -53,7 +50,7 @@
     </div>
     </section>
         <!--
-        footer
+            footer
         -->
 </body>
 </html>
