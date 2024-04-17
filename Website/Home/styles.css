@@ -27,31 +27,19 @@ html
 {
     color:var(--black);
     font-size: var(--l35);
+    margin-right:auto;
 }
-
+.navbar .icons{
+    margin-left: 20px;
+}
 .navbar 
 {
-    /*display: flex;*/
+    display: flex;
     font-family: 'Abhaya Libre';
     padding: var(--l50);
-    position: absolute;
     width: 100vw;
-    /*justify-content: flex-end;*/
 }
-.icons
-{
-    /*float: right;*/
-    /*justify-content: flex-end;*/
-    display: inline;
-}
-.navbar h1
-{
-    display: inline;
-}
-.navbar ul
-{
-    display: inline;
-}
+
 a{
     
     font-size: var(--l18);
