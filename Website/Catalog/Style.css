@@ -5,11 +5,11 @@
     font-family: "abhaya libre";
 }
 header{
-    background-image: url("../../assets/product_images/1d0d7ca0d7904d5d8804813bc67ce07e.jpg");
+    background-image: url("../../assets/product_images/193a47a9-9eec-42fc-ad55-82fdb7102606.jpg");
     margin-bottom: 30px;
     background-size: cover;
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 78vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,14 +25,15 @@ header h1{
     margin: auto;
     margin-top: 30px;
     flex-wrap: wrap;
-    gap: 30px;
+    
+    justify-content: space-between;
     
 }
 .col{
     width: 30%;
     display: flex;
     flex-direction: column;
-    height: 40%;
+    margin-top: 20px;
 }
 .col .content{
     width: 100%;
@@ -48,11 +49,11 @@ header h1{
     left: 34%;
     opacity: 0;
     border: 1px solid white;
-    width: 120px;
-    height: 38px;
+    width: 9vw;
+    height: 6vh;
     background-color: transparent;
-    font-size: 20px;
     cursor: pointer;
+    font-size: 1.05em;
     transition: all 1s ease;
 
 }
@@ -79,7 +80,7 @@ header h1{
     width: 100%;
 }
 .col .content-text p{
-    font-size: 30px;
+    font-size: 1.9em;
 }
 .row .col .content-text p:last-child{
     float: right;
@@ -88,7 +89,7 @@ header h1{
     border:2px solid black;
     width: 90%;
     margin: auto;
-    height: 50px;
+    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;

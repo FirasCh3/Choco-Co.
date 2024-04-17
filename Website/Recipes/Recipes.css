@@ -27,19 +27,19 @@ header{
     align-items: center;
 }
 h1{
-    font-size: 100px;
+    font-size: 6.25em;
 }
 h1 span{
-    font-size: 170px;
+    font-size: 2em;
 }
 
 /*---------------------------------------*/
 
 h2{
-    font-size: 60px;
+    font-size: 3.75em;
 }
 p{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 /*---------------------------------------*/
@@ -53,14 +53,15 @@ p{
     text-align: center; 
 }
 .ABOUT_THE_RECIPE p{
-    width: 800px;
+    width: 45vw;
+    padding-top: 2vh;
 }
 .line{
     background-color: white;
-    width: 410px;
-    height: 2px;
+    width:22vw;
+    height: 0.3vh;
     border-radius: 5px;
-    margin: 15px;
+    margin:2vh ;
 }
 
 /*---------------------------------------*/
@@ -72,8 +73,8 @@ p{
     align-items: center;
 }
 .MAIN_IMAGE img{
-    width: 1200px;
-    height: 85%;
+    width: 70vw;
+    height: 70vh;
 }
 
 /*---------------------------------------*/
@@ -81,7 +82,7 @@ p{
 .row{
     height: 60vh;
     display: flex;
-    padding-bottom:40px ;
+    padding-top: 5vh;
 }
 
 .col1 , .col2{
@@ -98,52 +99,52 @@ p{
 .col11 img{
     height: 100%;
     width: 100%;
-    padding-right: 345px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-right: 15vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 .col22 img{
     height: 100%;
     width: 100%;
-    padding-left: 345px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 15vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .line2{
     background-color: white;
-    height: 2px;
+    height: 0.3vh;
     border-radius: 5px;
     position: absolute;    
 }
 .col1 .line2{
     right: 0;
-    left:600px;
+    left:31.5vw;
 }
 .col2 .line2{
     left: 0;
-    right:633px;
+    right:31.5vw;
 }
 
 .col1 p { 
-    padding-top: 25px;
-    padding-left: 150px;
-    padding-right: 50px;
+    padding-top: 3vh;
+    padding-left: 13vw;
+    padding-right: 2vw;
 }
 .col2 p{
-    padding-top: 25px;
-    padding-left: 50px;
-    padding-right: 150px;
+    padding-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 13vw;
 }
 .col1 h2{
-    padding-top: 5px;
-    padding-left: 550px;
-    padding-bottom: 3px;
+    padding-top: 2vh;
+    padding-left: 28vw;
+    padding-bottom: 1vh;
 }
 .col2 h2{
-    padding-top: 5px;
-    padding-right: 700px;
-    padding-bottom: 3px;
+    padding-top: 2vh;
+    padding-right: 37vw;
+    padding-bottom: 1vh;
 }
 
 /*---------------------------------------*/
@@ -154,12 +155,13 @@ p{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-top: 3vh;
 }
 .Video .line{
-    width: 150px;
+    width: 14vw;
 }
 .Video .vid{
-    margin-top: 30px;
+    margin-top: 4vh;
     width: 90%;
     height: 80%;
 }
