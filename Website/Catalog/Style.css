@@ -17,9 +17,10 @@ header{
     justify-content: center;
     flex-direction: column;
 }
-header h1{
+header p{
     text-align: center;
     color: white;
+    font-size: 4em;
     
 }
 .row{

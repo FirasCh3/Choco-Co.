@@ -11,8 +11,8 @@
 <body>
     <header>
         <!--navbar-->
-        <h1>ENJOY</h1>
-        <h1>THE CHOCOLATE</h1>
+        <p>ENJOY</p>
+        <p>THE CHOCOLATE</p>
     </header>
     <section>
     <div class='title'>
@@ -38,7 +38,7 @@
                         <div class='content'>
                             <img src='../../assets/product_images/Frame1.png'>
                             <span></span>
-                            <button><a href=Order.php?productId=$row[Product_id]>Order now<a></button>
+                            <button><a href=../Order/Order.php?productId=$row[Product_id]>Order now<a></button>
                         </div>
                         <div class='content-text'>
                             <p>$row[Product_name]</p>
