@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "abhaya libre";
+
     
 }
 body{
@@ -36,9 +38,29 @@ body{
 }
 .text .quantity{
     display: flex;
-    justify-content: space-between;
-}
-.text .quantity input{
     
+}
+.quantity .quantity-value{
+    margin-left: auto;
+    display: flex;
+}
+.quantity-value button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-family: 'Lucida Console';
+}
+.quantity-value button:first-child{
+    margin-right: 10px;
+}
+.quantity-value button:last-child{
+    margin-left: 10px;
+}
+.quantity-value input{
+    background: transparent;
+    border: none;
+    color: white;
 }
 

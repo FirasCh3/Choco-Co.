@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
     <link href="Style.css" rel="stylesheet">
+    <script src='Script.js'></script>
 </head>
 <body>
     <!--
@@ -32,7 +33,11 @@
                     <hr>
                     <div class='quantity'>
                         <p>Quantity</p>
-                        <input type='number' name='Quantity'></input>
+                        <div class='quantity-value'>
+                            <button onclick='Substract()'>-</button>
+                            <p id='qte'>0</p>
+                            <button onclick='add()'>+</button>
+                        </div>
                     </div>
                 </div>  
             
