@@ -18,13 +18,14 @@ body{
 .info .text{
     color: white;
     margin-left: 2%;
-    font-size: 5em;
+    font-size: 3em;
 }
 .info hr{
     width: 100%;
 }
 .info img{
-    width: 50%;
+    object-fit: cover;
+    width: 30%;
 }
 .info .text{
     width: 50%;
@@ -32,5 +33,12 @@ body{
 .text .prdctprice{
     display: flex;
     justify-content: space-between;
+}
+.text .quantity{
+    display: flex;
+    justify-content: space-between;
+}
+.text .quantity input{
+    
 }
 

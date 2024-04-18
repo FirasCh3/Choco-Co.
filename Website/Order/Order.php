@@ -30,8 +30,9 @@
                         <p>$row[Product_price]$</p>
                     </div>
                     <hr>
-                    <div>
-
+                    <div class='quantity'>
+                        <p>Quantity</p>
+                        <input type='number' name='Quantity'></input>
                     </div>
                 </div>  
             

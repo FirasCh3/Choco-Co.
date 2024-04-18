@@ -45,6 +45,7 @@ header p{
 }
 .col .content img{
     width: 100%;
+    object-fit: cover;
 }
 .col .content button{
     position: absolute;
