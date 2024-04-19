@@ -34,7 +34,7 @@
                 <div class = 'ABOUT_THE_RECIPE'>
                     <h2>ABOUT THE RECIPE</h2>
                     <div class='line'></div>
-                    <p>$recipeAbout</p>;      
+                    <p>$recipeAbout</p>      
                 </div>
 
                 <!--------------------------------------->
