@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2024 at 10:26 PM
+-- Generation Time: Apr 19, 2024 at 10:52 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -81,6 +81,13 @@ CREATE TABLE `recipes` (
   `recipe_steps` text NOT NULL,
   `recipe_tutorial` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `recipes`
+--
+
+INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
+(0, 'test', '../../assets/RECIPES_IMGs/test.jpg', 'test', 'test', 'https://www.youtube.com/watch?v=fr7DgP6ek-8&ab_channel=Lesd%C3%A9licesdeMaha');
 
 --
 -- Indexes for dumped tables

@@ -75,9 +75,7 @@
                 <div class='Video'>
                     <h2>Video lessons</h2>
                     <div class='line'></div>
-                    <video controls class='vid'>
-                        <source src='$recipeTutorial' type='video/mp4'>
-                    </video>
+                    <iframe class = 'vid' src='$recipeTutorial' frameborder='0' allowfullscreen></iframe>
                 </div>";
         }
         mysqli_close($conn);   
