@@ -19,39 +19,6 @@ body{
     align-items: center;
     gap:8vh;
 }
-
-/*---------------------------------------*/
-/*
-header:before {
-    content: "";
-    display: block;
-    position: absolute;
-
-    border-radius: 100% 50%;
-    width: 51%;
-    height: 30%;
-    right: -5px;
-    top: 80.6%;
-
-    background-color: black;
-
-    z-index: 1;
-}
-header:after {
-    content: "";
-    display: block;
-    position: absolute;
-
-    border-radius: 100% 50%;
-    width: 50%;
-    height: 20%;
-    left: -5px;
-    top: 90%;
-
-    background-color: black;
-
-    z-index: 0;
-}*/
 header{ 
     background-image: url("../../assets/product_images/RECIPESHEADER2.jpg");
     background-position: center;
