@@ -32,14 +32,14 @@
 
                 <div class = 'ABOUT_THE_RECIPE'>
                     <h2>ABOUT THE RECIPE</h2>
-                    <div class="line"></div>
+                    <div class='line'></div>
                     <p>$recipeAbout</p>;      
                 </div>
 
                 <!--------------------------------------->
 
                 <div class='MAIN_IMAGE'>
-                    <img src="$recipeImage">
+                    <img src='$recipeImage'>
                 </div>
 
                 <!--------------------------------------->
@@ -75,9 +75,9 @@
                     <h2>Video lessons</h2>
                     <div class='line'></div>
                     <video controls class='vid'>
-                        <source src="$recipeTutorial" type='video/mp4'>
+                        <source src='$recipeTutorial' type='video/mp4'>
                     </video>
-                </div>"
+                </div>";
         }
     ?>
 
