@@ -39,7 +39,7 @@
                             <button onclick='add()'>+</button>
                         </div>
                     </div>
-                    <button class='add' onclick='addtoCart()'>Add to cart</button>
+                    <button class='add' onclick='addtoCart($productId)'>Add to cart</button>
                 </div>  
             
             ";

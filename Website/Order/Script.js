@@ -7,6 +7,13 @@ function Substract(){
 function add(){
     document.getElementById("qte").innerText++;
 }
-function addtoCart(){
-    
+function addtoCart(productId){
+    quantity =  parseInt(document.getElementById("qte").innerText);
+    if(localStorage.getItem("product"+productId.toString())){
+        localStorage.setItem("product"+productId.toString(), parseInt(localStorage.getItem("product"+productId.toString()))+quantity)
+    }else{
+        localStorage.setItem("product"+productId.toString(), quantity)
+    }
+   
+
 }
