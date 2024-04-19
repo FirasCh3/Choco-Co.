@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Recipes.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,8 @@
 
     <?php
         require_once "../connexion.php"; 
-        $catalogId = $_GET["recipeId"];
+        $recipeId = 0 ;
+        $catalogId = $recipeId;
         $query = "select * from Recipes where recipe_id='$recipeId'";
         $result = mysqli_query($conn, $query); 
         if (mysqli_num_rows($result)>0){
@@ -51,7 +52,7 @@
                         <p>$recipeIngredients</p>
                     </div>
                     <div class='col11'>
-                        <img src='../../assets/product_images/RECIPES_EGGS.jpg'>
+                        <img src='../../assets/RECIPES_IMGs/RECIPES_EGGS.jpg'>
                     </div>
                 </div>
 
@@ -59,7 +60,7 @@
 
                 <div class='row'>
                     <div class='col22'>
-                        <img src='../../assets/product_images/RECIPES_FARINE.jpg'>
+                        <img src='../../assets/RECIPES_IMGs/RECIPES_FARINE.jpg'>
                     </div>
                     <div class='col2'>
                         <h2>Steps</h2>
@@ -79,6 +80,7 @@
                     </video>
                 </div>";
         }
+        mysqli_close($conn);   
     ?>
 
 </body>
