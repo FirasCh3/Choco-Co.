@@ -23,11 +23,11 @@
             $result = mysqli_query($conn, $query);
             $row = mysqli_fetch_assoc($result);
             echo"
-                <div class='text'>
+                <div class='command'>
                     <p>$row[Product_name]</p>
                     <hr>
                     <div class='prdctprice'>
-                        <p>price</p>
+                        <p>Price</p>
                         <p>$row[Product_price]$</p>
                     </div>
                     <hr>
@@ -39,6 +39,7 @@
                             <button onclick='add()'>+</button>
                         </div>
                     </div>
+                    <button class='add' onclick='addtoCart()'>Add to cart</button>
                 </div>  
             
             ";

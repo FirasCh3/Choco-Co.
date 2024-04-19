@@ -7,3 +7,6 @@ function Substract(){
 function add(){
     document.getElementById("qte").innerText++;
 }
+function addtoCart(){
+    
+}
