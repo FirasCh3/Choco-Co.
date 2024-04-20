@@ -40,7 +40,7 @@
                 <!--------------------------------------->
 
                 <div class='MAIN_IMAGE'>
-                    <img src='$recipeImage'>
+                    <img src=$recipeImage>
                 </div>
 
                 <!--------------------------------------->
@@ -75,7 +75,7 @@
                 <div class='Video'>
                     <h2>Video lessons</h2>
                     <div class='line'></div>
-                    <iframe class = 'vid' src='$recipeTutorial' frameborder='0' allowfullscreen></iframe>
+                    <iframe class = 'vid' src=$recipeTutorial title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
                 </div>";
         }
         mysqli_close($conn);   
