@@ -35,13 +35,13 @@
                         <div class='quantity'>
                             <p>Quantity</p>
                             <div class='quantity-value'>
-                                <button onclick='Substract()'>-</button>
+                                <button onclick='Substract()' type='button'>-</button>
                                 <input id='quantity-input' type='text' hidden value='0' name='product_quantity'>
                                 <p id='qte'>0</p>
-                                <button onclick='add()'>+</button>
+                                <button onclick='add()' type='button'>+</button>
                             </div>
                         </div>
-                        <button class='add'>Add to cart</button>
+                        <input type='submit' class='add' value='Add to cart'>
                     </form>
                 </div>  
             ";
