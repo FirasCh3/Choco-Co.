@@ -76,7 +76,7 @@
                     <h2>Video lessons</h2>
                     <div class='line'></div>
                     <video class='vid' controls>
-                        <source src=$recipeTutorial type='video/mp4'>
+                        <source src='$recipeTutorial' type='video/mp4'>
                     </video>
                 </div>";
         }
