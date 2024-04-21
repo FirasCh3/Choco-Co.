@@ -87,7 +87,7 @@ CREATE TABLE `recipes` (
 --
 
 INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
-(0, 'test', '../../assets/RECIPES_IMGs/test.jpg', 'test', 'test', 'https://www.youtube.com/embed/73-DlwWX614?si=11GIt30bZ9lVlIih');
+(0, 'test', '../../assets/RECIPES_IMGs/test.jpg', 'test', 'test', 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe');
 
 --
 -- Indexes for dumped tables
