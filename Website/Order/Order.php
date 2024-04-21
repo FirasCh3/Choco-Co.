@@ -24,24 +24,26 @@
             $row = mysqli_fetch_assoc($result);
             echo"
                 <div class='command'>
-                    <p>$row[Product_name]</p>
-                    <hr>
-                    <div class='prdctprice'>
-                        <p>Price</p>
-                        <p>$row[Product_price]$</p>
-                    </div>
-                    <hr>
-                    <div class='quantity'>
-                        <p>Quantity</p>
-                        <div class='quantity-value'>
-                            <button onclick='Substract()'>-</button>
-                            <p id='qte'>0</p>
-                            <button onclick='add()'>+</button>
+                    <form method='POST' action='Cart.php'>
+                        <input type='text' name='product_name' value='$row[Product_name]' hidden>$row[Product_name]
+                        <hr>
+                        <div class='prdctprice'>
+                            <p>Price</p>
+                            <input type='text' name='product_price' value='$row[Product_price]' hidden>$row[Product_price]$
                         </div>
-                    </div>
-                    <button class='add' onclick='addtoCart()'>Add to cart</button>
+                        <hr>
+                        <div class='quantity'>
+                            <p>Quantity</p>
+                            <div class='quantity-value'>
+                                <button onclick='Substract()' type='button'>-</button>
+                                <input id='quantity-input' type='text' hidden value='0' name='product_quantity'>
+                                <p id='qte'>0</p>
+                                <button onclick='add()' type='button'>+</button>
+                            </div>
+                        </div>
+                        <input type='submit' class='add' value='Add to cart'>
+                    </form>
                 </div>  
-            
             ";
             mysqli_close($conn);
         ?>

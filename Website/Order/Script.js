@@ -1,12 +1,11 @@
 function Substract(){
     if(document.getElementById("qte").innerText!=0){
-        document.getElementById("qte").innerText--;
+        quantity = --document.getElementById("qte").innerText;
+        document.getElementById("quantity-input").setAttribute("value", quantity);
     }
     
 }
 function add(){
-    document.getElementById("qte").innerText++;
-}
-function addtoCart(){
-    
+    quantity = ++document.getElementById("qte").innerText;
+    document.getElementById("quantity-input").setAttribute("value", quantity);
 }
