@@ -80,4 +80,6 @@ html{
     height: 10vh;
     font-size: 1em;
 }
-
+input[type="submit"]{
+    cursor: pointer;
+}

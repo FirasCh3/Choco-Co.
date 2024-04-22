@@ -25,6 +25,7 @@
             echo"
                 <div class='command'>
                     <form method='POST' action='Cart.php'>
+                        <input type='text' name='product_id' value='$row[Product_id]' hidden>
                         <input type='text' name='product_name' value='$row[Product_name]' hidden>$row[Product_name]
                         <hr>
                         <div class='prdctprice'>
@@ -43,6 +44,7 @@
                         </div>
                         <input type='submit' class='add' value='Add to cart'>
                     </form>
+                    
                 </div>  
             ";
             mysqli_close($conn);
