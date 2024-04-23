@@ -26,6 +26,13 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `catalog`
 --
+-- Supprimer la base de données si elle existe
+DROP DATABASE IF EXISTS chococo;
+-- Créer une nouvelle base de données
+CREATE DATABASE chococo CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+-- Utiliser la base de données nouvellement créée
+USE chococo;
 
 CREATE TABLE `catalog` (
   `catalog_id` int(11) NOT NULL,
