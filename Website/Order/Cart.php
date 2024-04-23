@@ -11,18 +11,13 @@
         $result = mysqli_query($conn, $query);
         if(mysqli_num_rows($result) > 0){
             $product_encoded = json_encode(array("product_id"=>$productId, "product_name"=>$productName,"product_price"=>$productPrice,"product_quantity"=>$productQuantity));
-            if(!isset($_SESSION["Cart"])){
-                    
-                    if($productQuantity>0){
-                       
+            if($productQuantity>0){
+                if(!isset($_SESSION["Cart"])){
                         $_SESSION["Cart"] = array($productId=>$product_encoded);
                         $alert = "Product added successfully";
-                        echo $alert;
-                    }else{
-                        $alert = "Invalid quantity";
-                    }
-            }else{
-                   if($_SESSION["Cart"][$productId]){ 
+                }
+                else{
+                    if($_SESSION["Cart"][$productId]){ 
                         $product_decoded = json_decode($_SESSION["Cart"][$productId]);
                        $product_decoded->product_quantity+=$productQuantity;
                        $_SESSION["Cart"][$productId] = json_encode($product_decoded);
@@ -33,10 +28,14 @@
                    }
                 }
             }else{
-                $alert = "Product doesn't exist";
-            }  
+                $alert = "Invalid quantity";
+            } 
             $_SESSION["alert"] = $alert;
+            echo $_SESSION["alert"];
             header("location:Order.php?productId=".$productId); 
             exit;
     }
+}else{
+    $alert = "Product doesn't exist";
+} 
 ?>

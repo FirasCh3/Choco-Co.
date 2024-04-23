@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION["alert"])){
+        $alert = $_SESSION["alert"];
+    }
+    unset($_SESSION["alert"]);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +24,7 @@
     <div class="info">
         <?php
          echo "<img src='../../assets/product_images/Frame1.png'></img>";
-            include("../connexion.php");
+            require_once("../connexion.php");
             $productId = $_GET["productId"];  
             $query = "select * from products where product_id='$productId'";
             $result = mysqli_query($conn, $query);
@@ -43,12 +50,21 @@
                             </div>
                         </div>
                         <input type='submit' class='add' value='Add to cart'>
+                        ";
+                        if(!empty($alert)){
+                            if(in_array($alert, ["Invalid quantity", "Product doesn't exist"])){
+                                echo "<span id='alert' class='error'>$alert</span>";
+                            }else{
+                                echo "<span id='alert' class='valid'>$alert</span>";
+                                }  
+                        }
+                        mysqli_close($conn);
+                        ?>
                     </form>
+                    <?php
+                        ?>
                     
                 </div>  
-            ";
-            mysqli_close($conn);
-        ?>
     </div>
 
     <!--

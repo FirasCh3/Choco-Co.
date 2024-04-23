@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "abhaya libre";
-
-    
 }
 body{
     background-color: black;
@@ -18,7 +16,7 @@ html{
 .info{
     display: flex;
     width: 90vw;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
 }
 .info .command{
@@ -70,16 +68,38 @@ html{
 }
 .command .add{
     display: block;
-    margin-top: 80px;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
     background: none;
     color: white;
     border: none;
-    width: 20vw;
-    height: 10vh;
     font-size: 1em;
-}
-input[type="submit"]{
     cursor: pointer;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.error{
+    background-color: red;
+}
+.valid{
+    background-color: #3ba340;
+}
+.command form span{
+    opacity: 0;
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   border-radius: 20px;
+   animation-name:show;
+   animation-duration: 3s;
+}
+@keyframes show {
+    0%{opacity: 0;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.75;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
 }
