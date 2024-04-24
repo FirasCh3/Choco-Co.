@@ -10,6 +10,7 @@
         $query = "select * from products where product_id = '$productId'";
         $result = mysqli_query($conn, $query);
         if(mysqli_num_rows($result) > 0){
+            echo mysqli_num_rows($result);
             $product_encoded = json_encode(array("product_id"=>$productId, "product_name"=>$productName,"product_price"=>$productPrice,"product_quantity"=>$productQuantity));
             if($productQuantity>0){
                 if(!isset($_SESSION["Cart"])){
@@ -21,7 +22,7 @@
                         $product_decoded = json_decode($_SESSION["Cart"][$productId]);
                        $product_decoded->product_quantity+=$productQuantity;
                        $_SESSION["Cart"][$productId] = json_encode($product_decoded);
-                       $alert = "Updated quantity sucessfully";
+                       $alert = "Updated quantity successfully";
                    }else{
                         $_SESSION["Cart"][$productId]=$product_encoded;
                         $alert = "Product added successfully";
@@ -34,8 +35,12 @@
             echo $_SESSION["alert"];
             header("location:Order.php?productId=".$productId); 
             exit;
+    }else{
+        header("location:../Catalog/Catalog.php"); 
+        exit;
     }
 }else{
-    $alert = "Product doesn't exist";
+    header("location:../Catalog/Catalog.php"); 
+    exit;
 } 
 ?>
