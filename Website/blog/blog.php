@@ -19,22 +19,6 @@
         <p class="sub-title">Recipes & Gift Ideas</p>
     </header>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -44,7 +28,7 @@
             <div class="carousel-caption top-0 mt-4">
             <p class="mt-5 fs-3 text-uppercase">New Recipe!</p>
             <h1 class="display-1 fw-bolder text-capitalize">Chocolate with Strawberry</h1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Discover</button>
+            <button class="btn btn-secondary px-4 py-2 fs-5 mt-5">Discover</button>
             </div>
         </div>
         <div class="carousel-item c-item">
@@ -52,7 +36,7 @@
             <div class="carousel-caption top-0 mt-4">
             <p class="text-uppercase fs-3 mt-5">New Recipe!</p>
             <p class="display-1 fw-bolder text-capitalize">Chocolate Pie</p>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            <button class="btn btn-secondary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
                 data-bs-target="#booking-modal">Discover</button>
             </div>
         </div>
@@ -61,7 +45,7 @@
             <div class="carousel-caption top-0 mt-4">
             <p class="text-uppercase fs-3 mt-5">New Recipe!</p>
             <p class="display-1 fw-bolder text-capitalize">Mousse with Chocolate</p>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            <button class="btn btn-secondary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
                 data-bs-target="#booking-modal">Discover</button>
             </div>
         </div>

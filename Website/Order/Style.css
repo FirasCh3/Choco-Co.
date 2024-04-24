@@ -2,35 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "abhaya libre";
 }
 body{
     background-color: black;
     width: 100%;
     height: 100%;
 }
+html{
+    width: 100%;
+    height: 100%;
+}
 .info{
     display: flex;
     width: 90vw;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
 }
-.info .text{
+.info .command{
     color: white;
     margin-left: 2%;
-    font-size: 5em;
+    font-size: 3em;
 }
 .info hr{
     width: 100%;
 }
 .info img{
+    object-fit: cover;
+    width: 30%;
+}
+.info .command{
     width: 50%;
 }
-.info .text{
-    width: 50%;
-}
-.text .prdctprice{
+.command .prdctprice{
     display: flex;
     justify-content: space-between;
 }
 
+.command .quantity{
+    display: flex;
+    
+}
+.quantity .quantity-value{
+    margin-left: auto;
+    display: flex;
+}
+.quantity-value button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-family: 'Lucida Console';
+}
+.quantity-value button:first-child{
+    margin-right: 10px;
+}
+.quantity-value button:last-child{
+    margin-left: 10px;
+}
+.quantity-value input{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.command .add{
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.error{
+    background-color: red;
+}
+.valid{
+    background-color: #3ba340;
+}
+.command form span{
+    opacity: 0;
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   border-radius: 20px;
+   animation-name:show;
+   animation-duration: 3s;
+}
+@keyframes show {
+    0%{opacity: 0;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.75;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
