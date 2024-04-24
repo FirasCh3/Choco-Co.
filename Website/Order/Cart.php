@@ -15,17 +15,17 @@
             if($productQuantity>0){
                 if(!isset($_SESSION["Cart"])){
                         $_SESSION["Cart"] = array($productId=>$product_encoded);
-                        $alert = "Product added successfully";
+                        $alert = "Product Added Successfully";
                 }
                 else{
                     if($_SESSION["Cart"][$productId]){ 
                         $product_decoded = json_decode($_SESSION["Cart"][$productId]);
                        $product_decoded->product_quantity+=$productQuantity;
                        $_SESSION["Cart"][$productId] = json_encode($product_decoded);
-                       $alert = "Updated quantity successfully";
+                       $alert = "Updated Quantity Successfully";
                    }else{
                         $_SESSION["Cart"][$productId]=$product_encoded;
-                        $alert = "Product added successfully";
+                        $alert = "Product Added Successfully";
                    }
                 }
             }else{

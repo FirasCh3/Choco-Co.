@@ -1,5 +1,4 @@
 <?php
-    
     session_start();
     if(isset($_SESSION["alert"])){
         $alert = $_SESSION["alert"];
@@ -72,20 +71,22 @@
                 </div> 
                 
     </div>
-    
     <div class="similair-articles">
-        <?php
-            $req = "select * from products where product_id!='$productId'";
-            $res = mysqli_query($conn, $req);
-            while(mysqli_fetch_assoc($res)){
-                echo "
-                <div class='col'>
-
-                </div>
-            ";
-            }
-            mysqli_close($conn);
-        ?>
+        <p>Similair Products</p>
+        <div class="row">
+                <?php
+                    $req = "select * from products where product_id!='$productId' limit 4";
+                    $res = mysqli_query($conn, $req);
+                    while($row=mysqli_fetch_assoc($res)){
+                        echo "
+                        <div class='col'>
+                            <a href='../Order/Order.php?productId=$row[Product_id]'><img src='../../assets/product_images/1d0d7ca0d7904d5d8804813bc67ce07e.jpg'></a>
+                        </div>
+                    ";
+                    }
+                    mysqli_close($conn);
+                ?>
+            </div>
 
     <!--
        footer
