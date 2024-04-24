@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "abhaya libre";
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url("../../assets/product_images/bg_blog.jpg");
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position:center;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .title{
+    text-align: center;
+    color: white;
+    font-size: 8em;  
+}
+header .sub-title{
+    text-align: center;
+    color: white;
+    font-size: 3em;  
+}
+.c-item {
+    height: 480px;
+    width:80%;
+  }
+  
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+
