@@ -18,13 +18,14 @@
         <p class="title">BLOG</p>
         <p class="sub-title">Recipes & Gift Ideas</p>
     </header>
+    <p class="recipe-title">Our Recipes</p>
     <div class="card-container">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1519148246701-3dc1897a7a21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwcmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D" alt="brownie-pic">
             <div class="card-content">
             <h3>Chocolate Brownie</h3>
             <p>Here is the recipe of a lucious Chocolate Brownie. Check it out!</p>
-            <a href="" class="btn">View Recipe</a>
+            <a href="Recipes.php" class="btn">View Recipe</a>
             </div>
         </div>
         <div class="card">
@@ -32,26 +33,18 @@
             <div class="card-content">
             <h3>Chocolat Fondant</h3>
             <p>Here is the recipe of a lucious "Chocolat Fondant". Check it out!</p>
-            <a href="" class="btn">View Recipe</a>
+            <a href="Recipes.php" class="btn">View Recipe</a>
             </div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1613563952058-93bc5bff5591?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNob2NvbGF0ZSUyMHJlY2lwZXN8ZW58MHx8MHx8fDA%3D" alt="brownie-pic">
+        <div class="card" href="Recipes.php">
+            <img src="https://images.unsplash.com/photo-1546898976-9850b9bba1e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwcGllfGVufDB8fDB8fHww" alt="brownie-pic">
             <div class="card-content">
-            <h3>Chocolate Brownie</h3>
-            <p>Here is the recipe of a lucious Chocolate Brownie. Check it out!</p>
-            <a href="" class="btn">View Recipe</a>
+            <h3>Chocolate Pie</h3>
+            <p>Here is the recipe of a lucious Chocolate Pie. Check it out!</p>
+            <a href="Recipes.php" class="btn">View Recipe</a>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
 
 
 
