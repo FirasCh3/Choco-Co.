@@ -18,6 +18,40 @@
         <p class="title">BLOG</p>
         <p class="sub-title">Recipes & Gift Ideas</p>
     </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519148246701-3dc1897a7a21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwcmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D" alt="brownie-pic">
+            <div class="card-content">
+            <h3>Chocolate Brownie</h3>
+            <p>Here is the recipe of a lucious Chocolate Brownie. Check it out!</p>
+            <a href="" class="btn">View Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505252929202-c4f39cda4d49?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="brownie-pic">
+            <div class="card-content">
+            <h3>Chocolat Fondant</h3>
+            <p>Here is the recipe of a lucious "Chocolat Fondant". Check it out!</p>
+            <a href="" class="btn">View Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1613563952058-93bc5bff5591?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNob2NvbGF0ZSUyMHJlY2lwZXN8ZW58MHx8MHx8fDA%3D" alt="brownie-pic">
+            <div class="card-content">
+            <h3>Chocolate Brownie</h3>
+            <p>Here is the recipe of a lucious Chocolate Brownie. Check it out!</p>
+            <a href="" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
 
