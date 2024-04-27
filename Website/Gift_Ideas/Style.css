@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "abhaya libre";
+    overflow-x: hidden;
+}
+header{
+    /*background-image: url("");*/
+    background-color: burlywood;/**TESTTT*/
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position:center;
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header p{
+    text-align: center;
+    color: white;
+    font-size:  6.25em;
+    
+}
+.line{
+    background-color: antiquewhite;
+    width:31.5vw;
+    height: 0.1vh;
+    border-radius: 5px;
+}
+.row_GIFT{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 12vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col_GIFT{
+    width: 27vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.col_GIFT .content_GIFT{
+    position: relative;
+    transition: all 1s ease;
+    height: 45vh;
+    overflow: hidden;
+}
+.col_GIFT .content_GIFT img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.col_GIFT .content_GIFT span{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+.col_GIFT .content_GIFT:hover span{
+    backdrop-filter: blur(2px);
+}
+.col_GIFT .content-text_GIFT{
+    width: 100%;
+    height: 5vh;
+    margin-top: 2vh;
+}
+.col_GIFT .content-text_GIFT p{
+    font-size: 1.9em;
+}
+.row_GIFT .col_GIFT .content-text_GIFT p:last-child{
+    float: right;
+}
+.col_GIFT p{
+    display: inline-block;
+    color: black;
+}
+.customize{
+    background-image: url("");
+    background-color: antiquewhite;/**TESTTT*/
+    margin-top: 50vh;
+    background-size: cover;
+    background-position:center;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12vh auto;
+}
+.customize h1{
+    font-size: 7em;
+}
+.customize h2{
+    font-size: 3em;
+}
+
