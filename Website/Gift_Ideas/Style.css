@@ -81,10 +81,6 @@ header p{
     display: inline-block;
     color: black;
 }
-.col_GIFT a{
-    color: white;
-    text-decoration: none;
-}
 .customize{
     background-image: url("");
     background-color: antiquewhite;/**TESTTT*/
