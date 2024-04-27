@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "abhaya libre";
-
-    
 }
 body{
     background-color: black;
@@ -18,7 +16,6 @@ html{
 .info{
     display: flex;
     width: 90vw;
-    height: 50vh;
     margin: auto;
 }
 .info .command{
@@ -70,14 +67,64 @@ html{
 }
 .command .add{
     display: block;
-    margin-top: 80px;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
     background: none;
     color: white;
     border: none;
-    width: 20vw;
-    height: 10vh;
     font-size: 1em;
+    cursor: pointer;
 }
+form{
+    width: 100%;
+    height: 100%;
+}
+.error{
+    background-color: red;
+}
+.valid{
+    background-color: #3ba340;
+}
+.command form span{
+   opacity: 0;
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   animation-name:show;
+   animation-duration: 3s;
+   font-size: 0.75em;
+}
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.similair-articles{
+    margin-top: 150px;
+    margin: 150px auto;
+    width: 90%;
+}
+.similair-articles .row{
+    display: flex;
+    gap: 2%;
+}
+.similair-articles .row .col{
+    
+    height: 40vh;
+    flex: 1;
+}
+.similair-articles .row .col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.similair-articles .col img:hover{
+    scale: 1.05;
+}
+.similair-articles p{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
 
+}
