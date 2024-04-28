@@ -17,6 +17,7 @@ html{
     display: flex;
     width: 90vw;
     margin: auto;
+    height: 50vh;
 }
 .info .command{
     color: white;
@@ -29,6 +30,7 @@ html{
 .info img{
     object-fit: cover;
     width: 30%;
+    height: 100%;
 }
 .info .command{
     width: 50%;
@@ -109,7 +111,6 @@ form{
     gap: 2%;
 }
 .similair-articles .row .col{
-    
     height: 40vh;
     flex: 1;
 }

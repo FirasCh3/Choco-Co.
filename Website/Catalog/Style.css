@@ -42,10 +42,13 @@ header p{
     width: 100%;
     position: relative;
     transition: all 1s ease;
+    height: 400px;
+    overflow-y: hidden;
 }
 .col .content img{
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 .col .content button{
     position: absolute;
