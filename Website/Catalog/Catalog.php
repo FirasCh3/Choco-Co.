@@ -38,7 +38,7 @@
             while($row = mysqli_fetch_assoc($result)){
                 echo "<div class='col'>
                         <div class='content'>
-                            <img src='../../assets/product_images/Frame1.png'>
+                            <img src='$row[Product_image]'>
                             <span></span>
                             <button><a href=../Order/Order.php?productId=$row[Product_id]>Order now<a></button>
                         </div>

@@ -15,15 +15,9 @@
     <script src='Script.js'></script>
 </head>
 <body>
-    <!--
-        header
-    -->
-    <div>
-        aaaaaaaaaaa
-    </div>
+    
     <div class="info">
         <?php
-         echo "<img src='../../assets/product_images/Frame1.png'></img>";
             require_once("../connexion.php");
             $productId = $_GET["productId"];  
             $query = "select * from products where product_id='$productId'";
@@ -31,6 +25,7 @@
             $row = mysqli_fetch_assoc($result);
             if(mysqli_num_rows($result) > 0){
                 echo"
+                    <img src='$row[Product_image]'></img>
                     <div class='command'>
                         <form method='POST' action='Cart.php'>
                             <input type='text' name='product_id' value='$row[Product_id]' hidden>
@@ -60,7 +55,7 @@
                                     }  
                             }
                     }else{
-                        header("location:../Catalog/Catalog.php");
+                        header("location:../Home/index.html");
                         exit;
                     }
                         ?>
@@ -80,7 +75,7 @@
                     while($row=mysqli_fetch_assoc($res)){
                         echo "
                         <div class='col'>
-                            <a href='../Order/Order.php?productId=$row[Product_id]'><img src='../../assets/product_images/1d0d7ca0d7904d5d8804813bc67ce07e.jpg'></a>
+                            <a href='../Order/Order.php?productId=$row[Product_id]'><img src='$row[Product_image]'></a>
                         </div>
                     ";
                     }

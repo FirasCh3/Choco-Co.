@@ -10,7 +10,6 @@
         $query = "select * from products where product_id = '$productId'";
         $result = mysqli_query($conn, $query);
         if(mysqli_num_rows($result) > 0){
-            echo mysqli_num_rows($result);
             $product_encoded = json_encode(array("product_id"=>$productId, "product_name"=>$productName,"product_price"=>$productPrice,"product_quantity"=>$productQuantity));
             if($productQuantity>0){
                 if(!isset($_SESSION["Cart"])){
@@ -32,15 +31,15 @@
                 $alert = "Invalid quantity";
             } 
             $_SESSION["alert"] = $alert;
-            echo $_SESSION["alert"];
             header("location:Order.php?productId=".$productId); 
             exit;
     }else{
-        header("location:../Catalog/Catalog.php"); 
+        echo "aaa";
+        header("location:../Home/index.html"); 
         exit;
     }
 }else{
-    header("location:../Catalog/Catalog.php"); 
+    header("location:../Home/index.html"); 
     exit;
 } 
 ?>

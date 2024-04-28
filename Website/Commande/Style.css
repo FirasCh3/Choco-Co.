@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "abhaya libre";
+    font-size: 1.05em;
+}
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+.row .text {
+    display: flex;
+    margin-bottom: 15px;
+}
+.row .text h1:nth-child(2) {
+    margin-left: 15px;
+}
+.row .content{
+    width: 90%;
+    margin: 15px auto;
+}
+.row .content table {
+    width: 100%;
+    text-align: left;
+}
+.row .content table th { 
+    color: gray;
+}
+.row .content table tr td img {
+    width: 30%;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.row .content table tr td:first-child {
+    display: flex;
+    align-items: center;
+
+}
+.row .content table tr td {
+    margin-bottom: 20px;
+}
