@@ -26,12 +26,14 @@
                     <th>TOTAL</th>
                 </tr>
                 <?php
+                    $total_sum = 0;
                     foreach($_SESSION["Cart"] as $json){
                         $item = json_decode($json);
                         $req = "select product_image from products where product_id='$item->product_id'";
                         $res = mysqli_query($conn, $req);
                         $image = mysqli_fetch_assoc($res);
                         $total = $item->product_quantity*$item->product_price;
+                        $total_sum +=$total ;
                         echo"
                             <tr>
                                 <td>
@@ -39,16 +41,34 @@
                                     $item->product_name
                                    
                                 </td>
-                                <td>$item->product_quantity</td>
-                                <td>$item->product_price</td>
-                                <td>$total</td>
+                                <td>
+                                    $item->product_quantity
+                                </td>
+                                <td>$item->product_price$</td>
+                                <td>$total$</td>
                             </tr>
                         
                         ";
                     }
+                    echo "<tr>
+                            <td></td>
+                            <td></td>
+                            <td>total:</td>
+                            <td>$total_sum$</td>
+                        </tr>";
                 ?>
             </table>
         </div>
+        <div class="text">
+            <h1>02</h1>
+            <h1>ADDRESS</h1>
+        </div>
+        <hr>
+        <form method="POST">
+            <input type="text">
+            <input type="text">
+
+        </form>
     </div>
     
 </body>

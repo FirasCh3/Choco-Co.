@@ -19,7 +19,7 @@
                 else{
                     if($_SESSION["Cart"][$productId]){ 
                         $product_decoded = json_decode($_SESSION["Cart"][$productId]);
-                       $product_decoded->product_quantity+=$productQuantity;
+                       $product_decoded->product_quantity=$productQuantity;     
                        $_SESSION["Cart"][$productId] = json_encode($product_decoded);
                        $alert = "Updated Quantity Successfully";
                    }else{

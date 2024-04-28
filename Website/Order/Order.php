@@ -22,7 +22,14 @@
             $productId = $_GET["productId"];  
             $query = "select * from products where product_id='$productId'";
             $result = mysqli_query($conn, $query);
+            if(isset($_SESSION['Cart'][$productId])){
+                $item = json_decode($_SESSION['Cart'][$productId]);
+                $quantity = $item->product_quantity;
+            }else{
+                $quantity = 0;
+            }
             $row = mysqli_fetch_assoc($result);
+            $productType = $row['type_produit'];
             if(mysqli_num_rows($result) > 0){
                 echo"
                     <img src='$row[Product_image]'></img>
@@ -40,8 +47,9 @@
                                 <p>Quantity</p>
                                 <div class='quantity-value'>
                                     <button onclick='Substract()' type='button'>-</button>
-                                    <input id='quantity-input' type='text' hidden value='0' name='product_quantity'>
-                                    <p id='qte'>0</p>
+                                
+                                    <input id='quantity-input' type='text' hidden value='$quantity' name='product_quantity'>
+                                    <p id='qte'>$quantity</p>
                                     <button onclick='add()' type='button'>+</button>
                                 </div>
                             </div>
@@ -60,8 +68,6 @@
                     }
                         ?>
                 
-                    <?php
-                        ?>
                 <form>   
                 </div> 
                 
@@ -70,7 +76,7 @@
         <p>Similair Products</p>
         <div class="row">
                 <?php
-                    $req = "select * from products where product_id!='$productId' limit 4";
+                    $req = "select * from products where product_id!='$productId' and type_produit='$productType' limit 4";
                     $res = mysqli_query($conn, $req);
                     while($row=mysqli_fetch_assoc($res)){
                         echo "

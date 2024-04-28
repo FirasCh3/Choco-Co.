@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "abhaya libre";
-    font-size: 1.05em;
 }
 .row {
     width: 90%;
@@ -23,6 +22,7 @@
 .row .content table {
     width: 100%;
     text-align: left;
+    font-size: 1.5em;
 }
 .row .content table th { 
     color: gray;
@@ -40,4 +40,18 @@
 }
 .row .content table tr td {
     margin-bottom: 20px;
+}
+.row .content table tr:last-child td:nth-child(3) {
+    color: gray;
+}
+.row form{
+    margin-top: 20px;
+}
+.row form{
+    display: flex;
+    justify-content: space-between;
+}
+.row form input{
+    width: 45%;
+    
 }
