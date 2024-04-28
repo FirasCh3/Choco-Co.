@@ -122,7 +122,8 @@ header h1 {
     display: flex;
     width: 90%;
     margin: auto;
-    margin-top: 12vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -138,9 +139,6 @@ header h1 {
     transition: all 1s ease;
     height: 45vh;
     overflow: hidden;
-
-    /*  TESTT */
-    background-color: lightgreen;
 }
 .col_HOME .content_HOME img{
     width: 100%;
@@ -151,28 +149,29 @@ header h1 {
 
 .col_HOME .content_HOME button{
     position: absolute;
-    top: 48%;
-    left: 43%;
-    width: 9vw;
-    height: 6vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 1px solid white;
+    width: 15vw;
+    height: 10vh;
     background-color: transparent;
     cursor: pointer;
-    font-size: 1.05em;
+    font-size: 2em;
     transition: all 1s ease;
     opacity: 0;
+
 }
 .col_HOME  .content_HOME  button:hover{
     background-color: var(--beige);
 }
-.col_HOME  .content_HOME  button:hover a{
+.col_HOME  .content_HOME  button a{
     color: white;
 }
 .col_HOME .content_HOME:hover button{
     opacity: 1;
 }
-
-
-
 
 
 .col_HOME .content_HOME span{
@@ -184,11 +183,62 @@ header h1 {
 }
 .col_HOME .content_HOME:hover span{
     backdrop-filter: blur(2px);
-    background-color: var(--beige);
+    background: linear-gradient(transparent, var(--beige));
 }
 .col_GIFT a{
     color: white;
     text-decoration: none;
 }
 /*----------------------------------------------------------------------*/
+.BLOG
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5vh;
+    margin-top: 4vh;
+}
+.Parent{
+    height: 40vh;
+    display: flex;
+}
 
+.Text_Child{
+    width: 75%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Pic_Child {
+    width: 25%;
+}
+/*IMAGES*/
+.Pic_Child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+/*PARAGHRAPHES*/
+.Text_Child p { 
+    padding-top: 2%;
+    font-size: 1.5em;
+}
+/*TITLES*/
+.Text_Child h2{
+    padding-top: 2%;
+    font-size: 2.5em;
+}
+/*Read More*/
+.Read_More{
+    margin-top: 4vh;
+    float: right;
+    margin-right: 10%;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
