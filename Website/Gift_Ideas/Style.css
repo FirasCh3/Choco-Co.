@@ -30,57 +30,86 @@ header p{
     height: 0.1vh;
     border-radius: 5px;
 }
+/*----------------------------------------------------------------------*/
 .row_GIFT{
+    border: 2px solid red;
     display: flex;
     width: 90%;
     margin: auto;
     margin-top: 12vh;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .col_GIFT{
+    border: 2px solid blue;
     width: 27vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 .col_GIFT .content_GIFT{
     position: relative;
     transition: all 1s ease;
-    height: 45vh;
-    overflow: hidden;
+    overflow-y: hidden;
 }
+.col_GIFT .content-text_GIFT{
+    width: 100%;
+}
+
 .col_GIFT .content_GIFT img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.col_GIFT .content_GIFT span{
+
+.col_GIFT .content-text_GIFT p{
+    font-size: 1.9em;
+    display: inline-block;
+    color: black;
+}
+.row_GIFT .col_GIFT .content-text_GIFT p:last-child{
+    float: right;
+}
+/*----------------------------------------------------------------------*/
+.row_GIFT .col_GIFT .content_GIFT button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 1px solid white;
+    width: 15vw;
+    height: 10vh;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 1s ease;
+    opacity: 0;
+
+}
+.row_GIFT .col_GIFT  .content_GIFT  button a{
+    color: white;
+    text-decoration: none;
+}
+.row_GIFT .col_GIFT  .content_GIFT  button:hover{
+    background-color: gray;
+}
+.row_GIFT .col_GIFT .content_GIFT:hover button{
+    opacity: 1;
+}
+
+
+.row_GIFT .col_GIFT .content_GIFT span{
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 100%;
 }
-.col_GIFT .content_GIFT:hover span{
+.row_GIFT .col_GIFT .content_GIFT:hover span{
     backdrop-filter: blur(2px);
+    background: linear-gradient(transparent, white);
 }
-.col_GIFT .content-text_GIFT{
-    width: 100%;
-    height: 5vh;
-    margin-top: 2vh;
-}
-.col_GIFT .content-text_GIFT p{
-    font-size: 1.9em;
-}
-.row_GIFT .col_GIFT .content-text_GIFT p:last-child{
-    float: right;
-}
-.col_GIFT p{
-    display: inline-block;
-    color: black;
-}
+/*----------------------------------------------------------------------*/
 .customize{
     background-image: url("");
     background-color: antiquewhite;/**TESTTT*/
