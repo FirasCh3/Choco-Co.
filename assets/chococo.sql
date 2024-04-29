@@ -72,9 +72,9 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 (6, '../../assets/product_images/pic.png', 300, 'nice', 'produit', 2),
 (7, '../../assets/product_images/tetiana-bykovets-H22N-9s8AUw-unsplash.jpg', 10, 'yo bro', 'produit', 1),
 
-(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret',0),
-(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret',0),
-(10,'../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret',0);
+(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret',1),
+(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret',1),
+(10,'../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret',1);
 
 -- --------------------------------------------------------
 
