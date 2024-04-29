@@ -20,7 +20,8 @@ body{
     gap:10vh;
 }
 header{ 
-    background-image: url("../../assets/RECIPES_IMGs/RECIPESHEADER2.jpg");
+    background-color: antiquewhite;/*TEST*/
+    /*background-image: url("../../assets/RECIPES_IMGs/RECIPESHEADER2.jpg");*/
     background-position: center;
     background-size: cover;   
     height: 80vh;
@@ -116,28 +117,36 @@ p{
     position: absolute;  
 }
 .col1 .line2{
+    top:12%;
     right: 0;
-    left:50%;
+    left:45%;
 }
 .col2 .line2{
+    top:12%;
     left: 0;
     right:50%;
 }
 /*PARAGHRAPHES*/
 .col1 p { 
-    padding-top: 5%;
-    padding-right: 4%;
+    padding-top: 6.5vh;
+    padding-right: 5%;
+    white-space: nowrap;
 }
 .col2 p{
-    padding-top: 5%;
-    padding-left: 4%;
+    padding-top: 6.5vh;
+    padding-left: 5%;
+    white-space: nowrap;
 }
 /*TITLES*/
-.col1 h2{
-    padding-left:50%;
+.col1 h2 {
+    margin-right: 5%; 
+    text-align: right;
+    white-space: nowrap;
 }
 .col2 h2{
-    padding-right:50%;
+    margin-left: 5%;
+    text-align: left;
+    white-space: nowrap;
 }
 
 /*---------------------------------------*/
