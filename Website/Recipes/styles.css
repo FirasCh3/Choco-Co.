@@ -117,12 +117,12 @@ p{
     position: absolute;  
 }
 .col1 .line2{
-    top:12%;
+    top:8vh;
     right: 0;
     left:45%;
 }
 .col2 .line2{
-    top:12%;
+    top:8vh;
     left: 0;
     right:50%;
 }
