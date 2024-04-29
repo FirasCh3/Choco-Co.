@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 28 avr. 2024 à 13:14
+-- Généré le : lun. 29 avr. 2024 à 21:34
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -11,9 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-DROP DATABASE IF EXISTS `chococo`;
-CREATE DATABASE IF NOT EXISTS `chococo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `chococo`;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,6 +20,8 @@ USE `chococo`;
 --
 -- Base de données : `chococo`
 --
+CREATE DATABASE IF NOT EXISTS `chococo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `chococo`;
 
 -- --------------------------------------------------------
 
@@ -30,11 +29,10 @@ USE `chococo`;
 -- Structure de la table `catalog`
 --
 
-CREATE TABLE IF NOT EXISTS `catalog` (
-  `catalog_id` int(11) NOT NULL AUTO_INCREMENT,
-  `catalog_name` varchar(100) NOT NULL,
-  PRIMARY KEY (`catalog_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `catalog` (
+  `catalog_id` int(11) NOT NULL,
+  `catalog_name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `catalog`
@@ -50,16 +48,14 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`) VALUES
 -- Structure de la table `products`
 --
 
-CREATE TABLE IF NOT EXISTS `products` (
-  `Product_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `products` (
+  `Product_id` int(11) NOT NULL,
   `Product_image` varchar(100) NOT NULL,
   `Product_price` float NOT NULL,
   `Product_name` varchar(100) NOT NULL,
   `type_produit` varchar(20) NOT NULL,
-  `catalog_id` int(11) NOT NULL,
-  PRIMARY KEY (`Product_id`),
-  KEY `catalog_id` (`catalog_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `catalog_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `products`
@@ -82,7 +78,7 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 -- Structure de la table `recipes`
 --
 
-CREATE TABLE IF NOT EXISTS `recipes` (
+CREATE TABLE `recipes` (
   `recipe_id` int(11) NOT NULL,
   `recipe_about` text NOT NULL,
   `recipe_image` text NOT NULL,
@@ -97,6 +93,39 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 
 INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
 (0, 'test', '../../assets/RECIPES_IMGs/test.jpg', 'test', 'test', 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4');
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `catalog`
+--
+ALTER TABLE `catalog`
+  ADD PRIMARY KEY (`catalog_id`);
+
+--
+-- Index pour la table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`Product_id`),
+  ADD KEY `catalog_id` (`catalog_id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `catalog`
+--
+ALTER TABLE `catalog`
+  MODIFY `catalog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT pour la table `products`
+--
+ALTER TABLE `products`
+  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Contraintes pour les tables déchargées
