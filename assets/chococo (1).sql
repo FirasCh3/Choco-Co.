@@ -29,7 +29,7 @@ USE `chococo`;
 -- Structure de la table `catalog`
 --
 
-CREATE TABLE `catalog` (
+CREATE TABLE IF NOT EXISTS `catalog` (
   `catalog_id` int(11) NOT NULL,
   `catalog_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -48,7 +48,7 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`) VALUES
 -- Structure de la table `products`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE IF NOT EXISTS `products` (
   `Product_id` int(11) NOT NULL,
   `Product_image` varchar(100) NOT NULL,
   `Product_price` float NOT NULL,
@@ -68,9 +68,9 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 (6, '../../assets/product_images/pic.png', 300, 'nice', 'produit', 2),
 (7, '../../assets/product_images/tetiana-bykovets-H22N-9s8AUw-unsplash.jpg', 10, 'yo bro', 'produit', 1),
 
-(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret',1),
-(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret',1),
-(10,'../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret',1);
+(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret',NULL),
+(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret',NULL),
+(10,'../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret',NULL);
 
 -- --------------------------------------------------------
 
@@ -78,7 +78,7 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 -- Structure de la table `recipes`
 --
 
-CREATE TABLE `recipes` (
+CREATE TABLE IF NOT EXISTS `recipes` (
   `recipe_id` int(11) NOT NULL,
   `recipe_about` text NOT NULL,
   `recipe_image` text NOT NULL,
