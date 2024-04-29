@@ -14,7 +14,6 @@
     <?php
         require_once "../connexion.php"; 
         $recipeId = 0 ;
-        $catalogId = $recipeId;
         $query = "select * from Recipes where recipe_id='$recipeId'";
         $result = mysqli_query($conn, $query); 
         if (mysqli_num_rows($result)>0){

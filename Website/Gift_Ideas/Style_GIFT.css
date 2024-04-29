@@ -32,15 +32,14 @@ header p{
 }
 /*----------------------------------------------------------------------*/
 .row_GIFT{
-    border: 2px solid red;
     display: flex;
     width: 90%;
     margin: auto;
     margin-top: 12vh;
     flex-wrap: wrap;
+    gap :1vw;
 }
 .col_GIFT{
-    border: 2px solid blue;
     width: 27vw;
     height: 50vh;
     display: flex;
@@ -50,9 +49,11 @@ header p{
     position: relative;
     transition: all 1s ease;
     overflow-y: hidden;
+    flex: 85%;
 }
 .col_GIFT .content-text_GIFT{
     width: 100%;
+    flex: 15%;
 }
 
 .col_GIFT .content_GIFT img{
@@ -65,6 +66,8 @@ header p{
     font-size: 1.9em;
     display: inline-block;
     color: black;
+    padding-top: 3%;
+    overflow-y: hidden;
 }
 .row_GIFT .col_GIFT .content-text_GIFT p:last-child{
     float: right;
