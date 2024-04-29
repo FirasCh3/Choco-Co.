@@ -37,7 +37,7 @@ header p{
     margin: auto;
     margin-top: 12vh;
     flex-wrap: wrap;
-    gap :1vw;
+    gap :2vw;
 }
 .col_GIFT{
     width: 27vw;
