@@ -29,7 +29,7 @@ USE `chococo`;
 -- Structure de la table `catalog`
 --
 
-CREATE TABLE `catalog` (
+CREATE TABLE IF NOT EXISTS `catalog` (
   `catalog_id` int(11) NOT NULL,
   `catalog_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -48,7 +48,7 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`) VALUES
 -- Structure de la table `products`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE IF NOT EXISTS `products` (
   `Product_id` int(11) NOT NULL,
   `Product_image` varchar(100) NOT NULL,
   `Product_price` float NOT NULL,
@@ -74,7 +74,7 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 -- Structure de la table `recipes`
 --
 
-CREATE TABLE `recipes` (
+CREATE TABLE IF NOT EXISTS `recipes` (
   `recipe_id` int(11) NOT NULL,
   `recipe_about` text NOT NULL,
   `recipe_image` text NOT NULL,
