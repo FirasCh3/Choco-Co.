@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `chococo`
 --
+DROP DATABASE `chococo`;
 CREATE DATABASE IF NOT EXISTS `chococo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `chococo`;
 
