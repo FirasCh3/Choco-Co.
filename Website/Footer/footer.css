@@ -99,29 +99,36 @@
 {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 40%;
     height: 80%;
     font-size: 1.1em;
     margin-top:7%;
     margin-left: 4%;
 }
 
-i,span 
-{
-    display: inline-block;
-    vertical-align: middle;
-}
 
 i 
 {
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 2%;
+    
 }
-
+#location
+{
+    margin-bottom: 11%;
+}
+#phone
+{
+    margin-bottom: 11%;
+}
 .formulaire
 {
     display: flex;
     flex-direction: row;
     border:none ;
+    width:60%;
+    height:80%
     width:67%;
     height:80%;
     font-size: 1em;
@@ -183,7 +190,8 @@ input[type="submit"]
         margin-bottom: 2em; 
     }
 
-    .bas {
+    .bas 
+    {
         font-size: 1.5em;
     }
 }
