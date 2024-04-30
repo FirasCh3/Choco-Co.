@@ -118,12 +118,20 @@ p{
     position: absolute;  
 }
 .col1 .line2{
+<<<<<<< HEAD
+    top:12%;
+=======
     top:16.5%;
+>>>>>>> 57ddb196db25f9f69d9ad620722cc78902b1f63a
     right: 0;
     left:30%;
 }
 .col2 .line2{
+<<<<<<< HEAD
+    top:12%;
+=======
     top:16.5%;
+>>>>>>> 57ddb196db25f9f69d9ad620722cc78902b1f63a
     left: 0;
     right:50%;
 }
