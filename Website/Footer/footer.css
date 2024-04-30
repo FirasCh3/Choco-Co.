@@ -22,15 +22,16 @@
     flex-direction: column; 
     flex:1;
     display: flex;
+    margin-bottom: 3em;
 }
 
 .col img 
 {
-    width:80%;
-    max-width: 300px;
-    height: 45%;
+    width:45%;
+    height: auto;
     justify-content: center;
-    margin-top:15%;
+    margin-top:15%
+
 }
 
 .col h4 
@@ -72,101 +73,59 @@
 .contactus
 {
     color:#987654;
-    /*width:67.437em;*/
     font-family:'Abhaya Libre';
     background-color: #ffff;
     border-style:ridge;
     border-color: #a99581;
-    text-align: center;
-    justify-content: center;
-    /*position: absolute*/
-    margin-bottom: 20%;
-    width: 20wh;
-    position: static;
-    top: 13em;
-    left: 17em; 
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 42%;
+    top: 46%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 .contactus h1
 {
-    font-size: 3.75em;
+    font-size: 220%;
+    text-align: center;
+    height:18%;
+    width: 100%;
 }
 
-.icon1
-{
-    margin-top: 0.5em;
-    color:#987654;
-    text-align: justify;
-    display: flex;
-    font-size: 1.5em;
-    margin-left: 1em;
-}
-
-.icon2
-{
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
-    color:#987654;
-    text-align: justify;
-    display: flex;
-    font-size: 1.5em;
-    margin-left: 1em;
-}
-    
-.icon1 p 
-{
-    margin-left: 1em;
-}
-
-.icon2 p 
-{
-    margin-left: 1em;
-}
-
-.social
-{
-    margin-top: 1em;
-    text-align: justify;
-    font-size: 1.5em;
-}
-
-.social h3
-{
-    margin-top: 1.25em;
-    margin-left: 2.5em;
-    text-align: justify;
-    font-size: 1em;
-}
-
-.social i
-{
-    margin-top: 0.75em;
-    margin-left: 1.75em;
-}
-
-.contactus_et_map 
-{
-    /*position: relative;*/
-    position:static;
-    
-}
-
-fieldset
+.description
 {
     display: flex;
     flex-direction: column;
-    border:none;
-    margin-top:-12em;
-    margin-left: 38em;
-    margin-right: 4em;
-    padding: 30px;
+    width: 33%;
+    height: 80%;
+    font-size: 1.1em;
+    margin-top:7%;
+    margin-left: 4%;
 }
 
-form
+i,span 
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+i 
+{
+    margin-right: 2%;
+}
+
+.formulaire
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border:none ;
+    width:67%;
+    height:80%
+    font-size: 1em;
+    margin-top:7%;
 }
 
 h2
@@ -179,51 +138,52 @@ h2
 input,select,textarea 
 {
     margin: 10px 0 0 0;
-    width: 100%;
+    width: 50%;
     min-height: 2em;
     max-height: 4em;
     border:none;
     color: #987654;
     font-family:'Abhaya Libre';
-    font-size: 1.25em;
+    font-size: 0.9em;
 }
-
+textarea
+{
+    max-height: 40px;
+    resize: vertical;
+}
 input[type="submit"]
 {
     font-family:'Abhaya Libre';
     color:#987654;
     display:fixed;
-    border:solid;
+    border:solid 1px;
     justify-items: center;
     border-radius: 2em;
     border-color: #987654;
     background-color: #ffff;
-    width:8em;
-}
-
-@media (max-width: 768px) 
-{
-    .contactus 
-    {
-        width: 70%;
-        height: 70%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.7em;
-        margin:0 auto;
-    }
-
-    fieldset,
-    form 
-    {
-        margin: 0 auto;
-    }
-
-    .bas 
-    {
-        font-size: 1.5em; 
-    }
-}
-
-
+    width:7em;
+    height: 0.5em;
     
+}
+@media (max-width: 768px) {
+    .formulaire
+    {
+        font-size: 0.85em;
+        margin-top: 5em;
+
+    }
+    .description
+    {
+        margin-top: 3.25em;
+    }
+    .col {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        margin-bottom: 2em; 
+    }
+
+    .bas {
+        font-size: 1.5em;
+    }
+}
