@@ -64,10 +64,19 @@
             <h1>ADDRESS</h1>
         </div>
         <hr>
-        <form method="POST">
-            <input type="text">
-            <input type="text">
-
+        <form method="POST" action="achat.php">
+            <input type="text" placeholder="First Name" name="firstname">
+            <input type="text" placeholder="Last Name" name="lastname">
+            <input type="text" placeholder="Email" name="email">
+            <input type="text" placeholder="Phone number" name="number">
+            <input type="number" placeholder="Zip code" maxlength="4" name="zip">
+            <input type="text" placeholder="Address" name="address">
+            <input type="text" placeholder="City" name="city">
+            <select>
+                <option selected>Tunisia</option>
+                <option>France</option>
+            </select>
+            <button>Confirm Order</button>
         </form>
     </div>
     
