@@ -1,78 +1,98 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
+
 :root
 {
     --clair : #fff;
     --beige :#987654;
-    --black :##000000;
-    --l35 :35px;
-    --l50 :50px;
+    --black :#000000;
+    
 }
+
 html
 {
-    font-family: 'Abhaya Libre';
-    color: var(--black);
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color:#987654;
 }
 
-/*style de liens*/
-
-.logo
-{
-    color:var(--black);
-    font-size: var(--l35);
-    margin-right:auto;
-}
-.navbar .icons{
-    margin-left: 20px;
-}
 .navbar 
 {
     display: flex;
-    font-family: 'Abhaya Libre';
-    padding: var(--l50);
+    justify-content:space-between;
+    padding: 2vw;
     width: 100vw;
+    height: 5vw;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
+
 }
 
-a{
-    
-    font-size: var(--l18);
-}
-/*.header-1
+.logo
 {
+    font-family: 'Jim Nightshade';
+    color: var(--clair);
+    font-size: 3.7em;
+    
+}
+
+.nav-links
+{
+    font-size:2em;
     font-family: 'Abhaya Libre';
     display: flex;
     justify-content:space-between;
-    align-items: center;
-    padding: var(--l50);
-    position: absolute;
-    width: 100vw;
-    background: var(--black);
+}
 
-}*/
-.nav-links
+li a
 {
-    display: flex;
-    align-items: center;
+    color: var(--clair);
+    padding:4em;
 }
-.nav-links li
+
+.icons i
 {
-    margin: 0 var(--l30);
+    font-size: 2.5em;
+    /*margin-top: 1em;*/
+    color:#fff;
+    padding:0.5em;
+    
 }
-.nav-links li:first-child
-{
-    margin-left: 0;
+
+@media (max-width: 1150px) {
+    .navbar {
+        /*flex-direction: column;*/
+        flex-direction: row;
+        height: auto; 
+        padding: 2vw 0; 
+    }
+
+    .logo {
+        margin-bottom: -0.75em;
+        font-size: 3em;
+    }
+
+    .nav-links {
+        flex-direction: row; 
+        align-items: center; 
+        margin-top: 1em; 
+    }
+
+    li a {
+        padding: 0.5em;
+    }
+
+    .icons {
+        margin-top: 1em;
+    }
 }
-.nav-links li:last-child
-{
-    margin-right: 0;
-}
+
 header
 {
     height: 100vh;
