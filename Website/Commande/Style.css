@@ -23,9 +23,12 @@
     width: 100%;
     text-align: left;
     font-size: 1.5em;
+    
 }
 .row .content table th { 
     color: gray;
+    
+    
 }
 .row .content table tr td img {
     width: 30%;
@@ -56,6 +59,10 @@
 .row form input[type="text"],select {
     width: 45%;
     font-size: 1.05em;
+}
+.row form input[type="number"] {
+    font-size: 1.05em;
+    width: 15%;
 }
 .row form input,select {
     outline: none;
@@ -91,3 +98,22 @@ input::-webkit-inner-spin-button {
     background-color: rgba(152, 118, 84, 1);
     color: white;
 }
+.row span{
+    opacity: 0;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    animation-name:show;
+    animation-duration: 3s;
+    font-size: 1.7em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .error{
+    background-color: red;
+}
+ @keyframes show {
+     from {opacity: 0;}
+     to {opacity: 1;}
+ }

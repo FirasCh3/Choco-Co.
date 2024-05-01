@@ -1,6 +1,12 @@
 <?php
     session_start();
     require_once  "../connexion.php";
+    $flag = "";
+    if(isset($_SESSION["flag"])){
+        $flag = $_SESSION["flag"];
+        unset($_SESSION["Cart"]);
+    }
+    unset($_SESSION["flag"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +32,7 @@
                     <th>TOTAL</th>
                 </tr>
                 <?php
+                if (isset($_SESSION["Cart"])) {
                     $total_sum = 0;
                     foreach($_SESSION["Cart"] as $json){
                         $item = json_decode($json);
@@ -56,6 +63,13 @@
                             <td>total:</td>
                             <td>$total_sum$</td>
                         </tr>";
+                }else{
+                    echo "<tr>
+                            <td>
+                                No items in cart
+                            </td>
+                        </tr>";
+                }
                 ?>
             </table>
         </div>
@@ -76,8 +90,13 @@
                 <option selected>Tunisia</option>
                 <option>France</option>
             </select>
-            <button>Confirm Order</button>
+            <button type="submit">Confirm Order</button>
         </form>
+        <?php
+            if($flag!=""){
+                echo "<span class='error'>$flag</span>";
+            }
+        ?>
     </div>
     
 </body>
