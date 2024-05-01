@@ -81,8 +81,8 @@ input::-webkit-inner-spin-button {
     color: rgba(152, 118, 84, 1);
     margin-left: 90%;
     font-size: 1.05em;
-    width: 300px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     transition: all 1s;
 
 }
