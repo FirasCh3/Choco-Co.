@@ -103,33 +103,33 @@
     </section>
     <div class="row">
         <div class="col">
-            <img src=".\images\target.png" alt="">
+            <img src="assets\imagesFooter\target.png" alt="">
             <h4>Click & Collect</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\delivery-truck.png" alt="">
+            <img src="assets\imagesFooter\delivery-truck.png" alt="">
             <h4>Fast Delivery</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>  
         </div>
         <hr>
         <div class="col" id="gift">
-            <img src=".\images\gift.png" alt="">
+            <img src="assets\imagesFooter\gift.png" alt="">
             <h4>Personalized Gifts</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\verified.png" alt="">
+            <img src="assets\imagesFooter\verified.png" alt="">
             <h4>Secure Payment</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
             
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\swap.png" alt="">
+            <img src="assets\imagesFooter\swap.png" alt="">
             <h4>Free Return</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         </div>
