@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 
 INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
 (0, 'These classic cookies are a go-to sweet treat that are easy to whip up and store well-if they last! We use two kinds of sugar: granulated for crunch and brown for chewiness.'
-, '../../assets/RECIPES_IMGs/recipe1/cookies1.jpg'
+, '../../assets/RECIPES_IMGs/T.jpg'
 , '1/4 cups flour | 
 1 teaspoon baking soda | 
 Fine salt | 
@@ -112,7 +112,7 @@ Let the baking sheets cool completely, Store the cookies in a container at room 
 
 '
 , ''),(1, 'The easiest Chocolate Cake recipe you ll ever make and it only needs a few simple ingredients! Plus the cake batter is made in one bowl and no mixer is required.'
-, '../../assets/RECIPES_IMGs/recipe2/cake1.jpg'
+, '../../assets/RECIPES_IMGs/TT.jpg'
 , '142g flour | 
 200g sugar | 
 35g  cocoa powder | 
@@ -137,7 +137,7 @@ Heat heavy cream in a small saucepan over stovetop on medium heat until just sim
 Pour hot cream over chocolate chocolate then stir with a rubber spatula until melted and smooth. Let it cool until it\'s a thicker consistency.'
 , ''),
 (2, 'Experience the wonder of Chocolate Satin, a classic recipe refined over the years. Mixing rich chocolate with silky smoothness, every bite is a treat for your taste buds. Enjoy it on its own or with your favorite dessert. Treat yourself to Chocolate Satin  it s pure deliciousness!'
-, '../../assets/RECIPES_IMGs/recipe3/recipe1.jpg','300 g bittersweet chocolate, finely chopped | 
+, '../../assets/RECIPES_IMGs/TTT.jpg','300 g bittersweet chocolate, finely chopped | 
 1/2 teaspoon fine sea salt | 
 1 teaspoon pure vanilla extract | 
 500 ml heavy cream | 
