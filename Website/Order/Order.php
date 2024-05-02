@@ -13,9 +13,31 @@
     <title>Order</title>
     <link href="Style.css" rel="stylesheet">
     <script src='Script.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!--header-->
+    <nav class="navbar">
+        <h1 class="logo">Choco Co.</h1>
+        <ul class="nav-links">
+             <li><a href="#Home" class="active">Home</a></li>
+             <li><a href="#Catalog">Catalog</a></li>
+             <li><a href="#Blog">Blog</a></li>
+             <li><a href="#Choco Co.">Choco Co.</a></li>
+         </ul>
+         <div class="icons">
+            <i href="#shooping" class="fa fa-shopping-cart"></i>
+            <i href="#search" class="fa fa-search"></i>
+            <span class="quantity">0</span>
+         </div>
+         
+        </nav>
+
     <div class="info">
         <?php
             require_once("../connexion.php");
