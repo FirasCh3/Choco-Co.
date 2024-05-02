@@ -63,7 +63,9 @@ li a:hover
     cursor: pointer;
     
 }
-
+.icons{
+    display: flex;
+}
 .icons span
 {
     background-color: red;

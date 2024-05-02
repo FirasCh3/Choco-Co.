@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +22,9 @@
     <nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
-             <li><a href="#Home" class="active">Home</a></li>
+             <li><a href="index.php" class="active">Home</a></li>
              <li><a href="#Catalog">Catalog</a></li>
-             <li><a href="#Blog">Blog</a></li>
+             <li><a href="../blog/blog.php">Blog</a></li>
              <li><a href="#Choco Co.">Choco Co.</a></li>
          </ul>
          <div class="icons">
@@ -30,10 +33,7 @@
             <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>
         </nav>
-
-
-
-        <!---------------------------------------------------------------------->
+        
         <header>
             <h3>We are</h3>
             <h1>HANDMADE</h1>
