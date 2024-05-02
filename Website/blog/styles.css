@@ -1,11 +1,13 @@
 *{
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
     font-family: "abhaya libre";
+    text-decoration: none;
     overflow-x: hidden;
+    list-style: none;
+    
+    
 }
 
 :root
@@ -15,6 +17,15 @@
     --black :#000000;
     
 }
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color:#987654;
+}
+
 .navbar 
 {
     display: flex;
@@ -47,9 +58,8 @@
 li a
 {
     color: var(--clair);
-    padding-right:4em;
+    padding:4em;
 }
-
 li a:hover
 {
     opacity: 0.8;
@@ -58,25 +68,28 @@ li a:hover
 .icons i
 {
     font-size: 2.5em;
+    /*margin-top: 1em;*/
     color:#fff;
     padding:0.5em;
     cursor: pointer;
     
 }
-.icons{
-    display: flex;
-}
+
 .icons span
 {
     background-color: red;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 2.5%;
-    right: 8.5%;
+    right: 5.5%;
     padding:3px 10px;
     font-size: 1em; /* Adjusted font size */
 
 }
+
 
 @media (max-width: 1150px) {
     .navbar {
@@ -105,7 +118,6 @@ li a:hover
         margin-top: 1em;
     }
 }
-
 
 header{
     background-image: url("../../assets/product_images/bg_blog.jpg");
@@ -196,18 +208,132 @@ header .sub-title{
 
 }
 
-.c-item {
-    height: 480px;
-    width:80%;
-  }
-  
-.c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
+/**************** style slides **************/
+
+/* CAROUSEL CSS */
+.carousel {
+    width : 90%;
+    position: relative;
+    margin: auto; 
+    border-radius: 3rem;
+}
+.carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: inset 0px 0px 120px 30px rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.carousel ul {
+  overflow: auto; 
+  display: flex; 
+  height: 40vw;
+  max-height: 500px;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-y: repeat(100%);
+  scroll-behavior: smooth;
+  background: gray;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: 100%;
+}
+.carousel ul::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+} 
+
+.carousel ul li {
+  width: 100%;
+  min-width: 100%; 
+  list-style: none; 
+  background: url(https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center / cover no-repeat; 
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.75);
+}
+.carousel ul li div {
+    z-index: 9;
+}
+.carousel ul li div a {
+    /*color: white;*/
+    display: inline-block;
+    background: white;
+    text-shadow: none;
+    color: black;
+    padding: 5px 15px;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.carousel ol {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.carousel ol li {
+    list-style: none;
+    padding: 0 5px;}
+
+.carousel ol li a {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 100%;
+}
+.carousel ol li.selected a {
+    background: white;
+}
+.carousel .prev, .carousel .next {
+    user-select:none;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.carousel .next {
+    left: auto;
+    right: 0;
 }
 
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+  .carousel ul li div {
+    display: none;
+}
+}
 
-
-
-
+/* DEMO CSS */
+.carousel ul li:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1526081715791-7c538f86060e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+.carousel ul li:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1614631016624-cb89bceec02c?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+.carousel ul li:nth-child(4) {
+    background-image: url(https://media.istockphoto.com/id/498738354/photo/chocolate-box-in-the-foreground.webp?b=1&s=170667a&w=0&k=20&c=JDvMMW6tXhYIuL3YFh2Ux1PZRXKh_dqnkb28h6EqrZ8=);}
+p, h2 {
+    margin: 15px auto;
+    padding: 0 15px;
+    max-width: 800px;
+}
+h2 {
+    margin-top: 30px;
+}
