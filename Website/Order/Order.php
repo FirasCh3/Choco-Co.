@@ -25,8 +25,8 @@
     <nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
-             <li><a href="#Home" class="active">Home</a></li>
-             <li><a href="#Catalog">Catalog</a></li>
+             <li><a href="../Home/index.php" class="active">Home</a></li>
+             <li><a href="../Catalog/Catalog.php">Catalog</a></li>
              <li><a href="#Blog">Blog</a></li>
              <li><a href="#Choco Co.">Choco Co.</a></li>
          </ul>
