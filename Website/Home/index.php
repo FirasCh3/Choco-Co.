@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once("../connexion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,20 +45,22 @@
         </div>
         <!---------------------------------------------------------------------->
         <div class='row_HOME'>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='../../assets/HOME_PIC/TEST.jpg'>
-                    <span></span>
-                    <button><a href='../Catalog/Catalog.php?catalogId=1'>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='../../assets/HOME_PIC/TEST.jpg'>
-                    <span></span>
-                    <button><a href='../Catalog/Catalog.php?catalogId=2'>View more<a></button>
-                </div>
-            </div>
+            <?php
+                $req = "select * from catalog";
+                $res= mysqli_query($conn,$req);
+                while($row=mysqli_fetch_array($res)){
+
+                    echo"
+                        <div class='col_HOME'>
+                            <div class='content_HOME'>
+                                <img src='$row[catalog_image]'>
+                                <span></span>
+                                <button><a href='../Catalog/Catalog.php?catalogId=$row[catalog_id]'>View more</a></button>
+                            </div>
+                        </div>
+                    ";
+                }
+            ?>
         </div>  
         <!---------------------------------------------------------------------->
         <div class='title_HOME'>
