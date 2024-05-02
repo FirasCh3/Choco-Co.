@@ -50,6 +50,9 @@
         <?php
               require_once "../connexion.php"; 
               $catalogId = $_GET["catalogId"];
+              if(empty($catalogId)){
+                header("location:../Home/index.php");
+              }
               $query = "select catalog_name from catalog where catalog_id='$catalogId'";
               $result = mysqli_query($conn, $query); 
               echo mysqli_fetch_assoc($result)["catalog_name"];
