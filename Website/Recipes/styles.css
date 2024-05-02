@@ -127,8 +127,7 @@ html{
     gap:10vh;
 }   
 header{ 
-    background-color: antiquewhite;/*TEST*/
-    /*background-image: url("../../assets/RECIPES_IMGs/RECIPESHEADER2.jpg");*/
+    background-image: url("../../assets/RECIPES_IMGs/HEADER.jpg");
     background-position: center;
     background-size: cover;   
     height: 80vh;
@@ -203,6 +202,7 @@ p{
     flex: 1;
     text-align: center;
     position: relative;
+
 }
 .col11 , .col22{
     overflow-y:hidden ;
@@ -236,12 +236,12 @@ p{
 .col1 p { 
     padding-top: 6.5vh;
     padding-right: 5%;
-    white-space: nowrap;
+    width: 35vw;
 }
 .col2 p{
     padding-top: 6.5vh;
     padding-left: 5%;
-    white-space: nowrap;
+    width: 35vw;
 }
 /*TITLES*/
 .col1 h2 {

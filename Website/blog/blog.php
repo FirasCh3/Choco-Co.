@@ -52,25 +52,25 @@
         <div class="card">
             <img src="https://images.unsplash.com/photo-1519148246701-3dc1897a7a21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwcmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D" alt="brownie-pic">
             <div class="card-content">
-            <h3>Chocolate Brownie</h3>
-            <p>Here is the recipe of a lucious Chocolate Brownie. Check it out!</p>
-            <a href="Recipes.php" class="btn">View Recipe</a>
+            <h3>Chocolate cookies</h3>
+            <p>Here is the recipe of a lucious cookies. Check it out!</p>
+            <a href="../Recipes/Recipes.php?recipeId=0" class="btn">View Recipe</a>
             </div>
         </div>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1505252929202-c4f39cda4d49?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="brownie-pic">
             <div class="card-content">
-            <h3>Chocolat Fondant</h3>
-            <p>Here is the recipe of a lucious "Chocolat Fondant". Check it out!</p>
-            <a href="Recipes.php" class="btn">View Recipe</a>
+            <h3>Chocolate Cake</h3>
+            <p>Here is the recipe of a lucious "Chocolate Cake". Check it out!</p>
+            <a href="../Recipes/Recipes.php?recipeId=1" class="btn">View Recipe</a>
             </div>
         </div>
         <div class="card" href="Recipes.php">
             <img src="https://images.unsplash.com/photo-1546898976-9850b9bba1e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwcGllfGVufDB8fDB8fHww" alt="brownie-pic">
             <div class="card-content">
-            <h3>Chocolate Pie</h3>
-            <p>Here is the recipe of a lucious Chocolate Pie. Check it out!</p>
-            <a href="Recipes.php" class="btn">View Recipe</a>
+            <h3>Chocolate Satin</h3>
+            <p>Here is the recipe of a lucious Chocolate Satin. Check it out!</p>
+            <a href="../Recipes/Recipes.php?recipeId=2" class="btn">View Recipe</a>
             </div>
         </div>
     </div>
