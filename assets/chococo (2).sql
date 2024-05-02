@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 03 mai 2024 à 01:54
+-- Généré le : ven. 03 mai 2024 à 01:56
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 -- Structure de la table `catalog`
 --
 
-DROP TABLE IF EXISTS `catalog`;
 CREATE TABLE `catalog` (
   `catalog_id` int(11) NOT NULL,
   `catalog_name` varchar(100) NOT NULL,
@@ -48,7 +47,6 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`, `catalog_image`) VALUES
 -- Structure de la table `orders`
 --
 
-DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
   `order_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
@@ -70,7 +68,6 @@ CREATE TABLE `orders` (
 -- Structure de la table `products`
 --
 
-DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `Product_id` int(11) NOT NULL,
   `Product_image` varchar(100) NOT NULL,
@@ -100,7 +97,6 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 -- Structure de la table `recipes`
 --
 
-DROP TABLE IF EXISTS `recipes`;
 CREATE TABLE `recipes` (
   `recipe_id` int(11) NOT NULL,
   `recipe_about` text NOT NULL,
