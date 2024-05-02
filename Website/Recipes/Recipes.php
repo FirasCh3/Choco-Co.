@@ -31,77 +31,77 @@
          
         </nav>
 
+    <div class="content">
+        <?php
+            require_once "../connexion.php"; 
+            $recipeId = 0 ;
+            $query = "select * from Recipes where recipe_id='$recipeId'";
+            $result = mysqli_query($conn, $query); 
+            if (mysqli_num_rows($result)>0){
+                $row = mysqli_fetch_assoc($result); 
+                $recipeImage = $row["recipe_image"];
+                $recipeAbout = $row["recipe_about"];
+                $recipeIngredients = $row["recipe_ingredients"];
+                $recipeSteps = $row["recipe_steps"];
+                $recipeTutorial = $row["recipe_tutorial"];
+                echo"
+                    <header>
+                        <h1>&#160;&#160;&#160;&#160;Let's<br><span>COOK</span></h1>
+                    </header>
 
-    <?php
-        require_once "../connexion.php"; 
-        $recipeId = 0 ;
-        $query = "select * from Recipes where recipe_id='$recipeId'";
-        $result = mysqli_query($conn, $query); 
-        if (mysqli_num_rows($result)>0){
-            $row = mysqli_fetch_assoc($result); 
-            $recipeImage = $row["recipe_image"];
-            $recipeAbout = $row["recipe_about"];
-            $recipeIngredients = $row["recipe_ingredients"];
-            $recipeSteps = $row["recipe_steps"];
-            $recipeTutorial = $row["recipe_tutorial"];
-            echo"
-                <header>
-                    <h1>&#160;&#160;&#160;&#160;Let's<br><span>COOK</span></h1>
-                </header>
+                    <!--------------------------------------->
 
-                <!--------------------------------------->
-
-                <div class = 'ABOUT_THE_RECIPE'>
-                    <h2>ABOUT THE RECIPE</h2>
-                    <div class='line'></div>
-                    <p>$recipeAbout</p>      
-                </div>
-
-                <!--------------------------------------->
-
-                <div class='MAIN_IMAGE'>
-                    <img src=$recipeImage>
-                </div>
-
-                <!--------------------------------------->
-
-                <div class='row'>
-                    <div class='col1'> 
-                        <h2>Ingredients</h2>
-                        <div class='line2'></div>
-                        <p>$recipeIngredients</p>
+                    <div class = 'ABOUT_THE_RECIPE'>
+                        <h2>ABOUT THE RECIPE</h2>
+                        <div class='line'></div>
+                        <p>$recipeAbout</p>      
                     </div>
-                    <div class='col11'>
-                        <img src='../../assets/RECIPES_IMGs/RECIPES_EGGS.jpg'>
+
+                    <!--------------------------------------->
+
+                    <div class='MAIN_IMAGE'>
+                        <img src=$recipeImage>
                     </div>
-                </div>
 
-                <!--------------------------------------->
+                    <!--------------------------------------->
 
-                <div class='row'>
-                    <div class='col22'>
-                        <img src='../../assets/RECIPES_IMGs/RECIPES_FARINE.jpg'>
+                    <div class='row'>
+                        <div class='col1'> 
+                            <h2>Ingredients</h2>
+                            <div class='line2'></div>
+                            <p>$recipeIngredients</p>
+                        </div>
+                        <div class='col11'>
+                            <img src='../../assets/RECIPES_IMGs/RECIPES_EGGS.jpg'>
+                        </div>
                     </div>
-                    <div class='col2'>
-                        <h2>Steps</h2>
-                        <div class='line2'></div>
-                        <p>$recipeSteps</p>
+
+                    <!--------------------------------------->
+
+                    <div class='row'>
+                        <div class='col22'>
+                            <img src='../../assets/RECIPES_IMGs/RECIPES_FARINE.jpg'>
+                        </div>
+                        <div class='col2'>
+                            <h2>Steps</h2>
+                            <div class='line2'></div>
+                            <p>$recipeSteps</p>
+                        </div>
+                        
                     </div>
-                    
-                </div>
 
-                <!--------------------------------------->
+                    <!--------------------------------------->
 
-                <div class='Video'>
-                    <h2>Video lessons</h2>
-                    <div class='line'></div>
-                    <video class='vid' controls>
-                        <source src='$recipeTutorial' type='video/mp4'>
-                    </video>
-                </div>";
-        }
-        mysqli_close($conn);   
-    ?>
-
+                    <div class='Video'>
+                        <h2>Video lessons</h2>
+                        <div class='line'></div>
+                        <video class='vid' controls>
+                            <source src='$recipeTutorial' type='video/mp4'>
+                        </video>
+                    </div>";
+            }
+            mysqli_close($conn);   
+        ?>
+    </div>
 </body>
 </html>
