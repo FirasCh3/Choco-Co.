@@ -21,9 +21,7 @@
 
 
 <body>
-    <header>
-        <!--navbar-->
-        <nav class="navbar">
+<nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
              <li><a href="#Home" class="active">Home</a></li>
@@ -38,6 +36,8 @@
          </div>
          
         </nav>
+    <header>
+        <!--navbar-->
 
 
 

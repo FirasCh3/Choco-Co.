@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "abhaya libre";
+    overflow-x: hidden;
 }
 
 :root
@@ -13,6 +15,7 @@
     --black :#000000;
     
 }
+
 
 .navbar 
 {
@@ -40,6 +43,7 @@
     font-family: 'Abhaya Libre';
     display: flex;
     justify-content:space-between;
+    cursor: pointer;
 }
 
 li a
@@ -48,13 +52,32 @@ li a
     padding-right:4em;
 }
 
+li a:hover
+{
+    opacity: 0.8;
+}
+.icons{
+    display: flex;
+}
 .icons i
 {
     font-size: 2.5em;
-    /*margin-top: 1em;*/
     color:#fff;
     padding:0.5em;
+    cursor: pointer;
     
+}
+
+.icons span
+{
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5%;
+    right: 8.5%;
+    padding:3px 10px;
+    font-size: 1em; /* Adjusted font size */
+
 }
 
 @media (max-width: 1150px) {
@@ -121,7 +144,6 @@ header h1 {
 .title_HOME{
     width: 90%;
     margin: auto;
-    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +163,7 @@ header h1 {
 }
 .col_HOME{
     width: 27vw;
-    height: 50vh;
+    
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -225,6 +247,7 @@ header h1 {
 }
 .Pic_Child {
     width: 25%;
+    overflow-y: hidden;
 }
 /*IMAGES*/
 .Pic_Child img{
