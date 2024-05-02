@@ -1,13 +1,11 @@
 *{
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-family: "abhaya libre";
     text-decoration: none;
-    overflow-x: hidden;
     list-style: none;
-    
-    
+    font-family: "abhaya libre";
+    overflow-x: hidden;
 }
 
 :root
@@ -18,13 +16,6 @@
     
 }
 
-html
-{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    background-color:#987654;
-}
 
 .navbar 
 {
@@ -58,13 +49,16 @@ html
 li a
 {
     color: var(--clair);
-    padding:4em;
+    padding-right:4em;
 }
+
 li a:hover
 {
     opacity: 0.8;
 }
-
+.icons{
+    display: flex;
+}
 .icons i
 {
     font-size: 2.5em;
@@ -79,17 +73,13 @@ li a:hover
 {
     background-color: red;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 2.5%;
-    right: 5.5%;
+    right: 8.5%;
     padding:3px 10px;
     font-size: 1em; /* Adjusted font size */
 
 }
-
 
 @media (max-width: 1150px) {
     .navbar {

@@ -10,8 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script src="script.js"></script>
@@ -28,10 +27,7 @@
 
 
 <body>
-
-    <header>
-        <!--navbar-->
-        <nav class="navbar">
+<nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
              <li><a href="#Home" class="active">Home</a></li>
@@ -46,6 +42,8 @@
          </div>
          
         </nav>
+    <header>
+        <!--navbar-->
 
         <p class="title">BLOG</p>
         <p class="sub-title">Recipes & Gift Ideas</p>
