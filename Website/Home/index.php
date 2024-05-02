@@ -33,10 +33,7 @@
             <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>
         </nav>
-
-
-
-        <!---------------------------------------------------------------------->
+        
         <header>
             <h3>We are</h3>
             <h1>HANDMADE</h1>
@@ -51,35 +48,14 @@
                 <div class='content_HOME'>
                     <img src='../../assets/HOME_PIC/TEST.jpg'>
                     <span></span>
-                    <button><a href='../Catalog/Catalog.php'>View more<a></button>
+                    <button><a href='../Catalog/Catalog.php?catalogId=1'>View more<a></button>
                 </div>
             </div>
             <div class='col_HOME'>
                 <div class='content_HOME'>
                     <img src='../../assets/HOME_PIC/TEST.jpg'>
                     <span></span>
-                    <button><a href='../Catalog/Catalog.php'>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='../../assets/HOME_PIC/TEST.jpg'>
-                    <span></span>
-                    <button><a href='../Catalog/Catalog.php'>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='../../assets/HOME_PIC/TEST.jpg'>
-                    <span></span>
-                    <button><a href='../Catalog/Catalog.php'>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='../../assets/HOME_PIC/TEST.jpg'>
-                    <span></span>
-                    <button><a href='../Catalog/Catalog.php'>View more<a></button>
+                    <button><a href='../Catalog/Catalog.php?catalogId=2'>View more<a></button>
                 </div>
             </div>
         </div>  
