@@ -203,6 +203,7 @@ p{
     flex: 1;
     text-align: center;
     position: relative;
+
 }
 .col11 , .col22{
     overflow-y:hidden ;
@@ -236,12 +237,12 @@ p{
 .col1 p { 
     padding-top: 6.5vh;
     padding-right: 5%;
-    white-space: nowrap;
+    width: 35vw;
 }
 .col2 p{
     padding-top: 6.5vh;
     padding-left: 5%;
-    white-space: nowrap;
+    width: 35vw;
 }
 /*TITLES*/
 .col1 h2 {

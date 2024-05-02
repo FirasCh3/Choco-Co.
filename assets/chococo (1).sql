@@ -16,7 +16,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Base de données : `chococo`
 --
@@ -93,64 +92,65 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 
 INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
 (0, 'These classic cookies are a go-to sweet treat that are easy to whip up and store well-if they last! We use two kinds of sugar: granulated for crunch and brown for chewiness.'
-, '../../assets/RECIPES_IMGs/test.jpg'
-, '1/4 cups flour
-1 teaspoon baking soda
-Fine salt
-1 1/2 sticks  unsalted butter, at room temperature
-3/4 cup brown sugar
-2/3 cup  sugar
-2 large eggs
+, '../../assets/RECIPES_IMGs/recipe1/cookies1.jpg'
+, '1/4 cups flour | 
+1 teaspoon baking soda | 
+Fine salt | 
+1 1/2 sticks  unsalted butter, at room temperature | 
+3/4 cup brown sugar | 
+2/3 cup  sugar | 
+2 large eggs | 
 1 teaspoon pure vanilla extract'
-, 'preheat to 375 degrees .
-Whisk together the flour, baking soda and 1 teaspoon salt in a large bowl.
+, 'preheat to 375 degrees | 
+Whisk together the flour, baking soda and 1 teaspoon salt in a large bowl | 
 
-Beat the butter and  sugars on medium-high speed in the bowl of a stand mixer in a large bowl until light and fluffy. Add the eggs, one at time. Beat in the vanilla. Reduce the speed to medium, add the flour mixture and beat until just incorporated. Stir in the chocolate chips.
+Beat the butter and  sugars on medium-high speed in the bowl of a stand mixer in a large bowl until light and fluffy | Add the eggs, one at time. Beat in the vanilla | Reduce the speed to medium, add the flour mixture and beat until just incorporated | Stir in the chocolate chips | 
 
-Scoop 12 tablespoons of dough onto each prepared baking sheet. Roll the dough into balls with slightly wet hands. Bake, rotating the cookie sheets from upper to lower racks halfway through, until golden but still soft in the center. Let cool for a few minutes on the baking sheet, and then transfer to a rack to cool.
+Scoop 12 tablespoons of dough onto each prepared baking sheet | Roll the dough into balls with slightly wet hands | Bake, rotating the cookie sheets from upper to lower racks halfway through, until golden but still soft in the center. Let cool for a few minutes on the baking sheet, and then transfer to a rack to cool | 
 
-Let the baking sheets cool completely,  Store the cookies in a container at room temperature for up to 5 days.
+Let the baking sheets cool completely, Store the cookies in a container at room temperature for up to 5 days.
 
 '
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4'),
-(1, 'The easiest Chocolate Cake recipe you’ll ever make and it only needs a few simple ingredients! Plus the cake batter is made in one bowl and no mixer is required.'
-, '../../assets/RECIPES_IMGs/test.jpg'
-, '142g flour 
-200g sugar
-35g  cocoa powder
-1/2 tsp baking soda
-1/2 tsp salt
-1 cup buttermilk
-1/2 cup vegetable oil
-2 tsp vanilla extract
-2 large eggs
-6 oz. semi-sweet chocolate
-3/4 cup heavy cream'
-, 'Preheat oven to 350 degrees. 
-In a large mixing bowl whisk together flour, sugar, 6 Tbsp cocoa, the baking soda, and salt.
-Add buttermilk, oil, vanilla and eggs.
-Whisk mixture until very well blended.
-Pour into prepared baking dish.
-Bake in preheated oven until toothpick inserted into the center of cake comes out clean, about 27 to 35 minutes.
+, ''),(1, 'The easiest Chocolate Cake recipe you ll ever make and it only needs a few simple ingredients! Plus the cake batter is made in one bowl and no mixer is required.'
+, '../../assets/RECIPES_IMGs/recipe2/cake1.jpg'
+, '142g flour | 
+200g sugar | 
+35g  cocoa powder | 
+1/2 tsp baking soda | 
+1/2 tsp salt | 
+1 cup buttermilk | 
+1/2 cup vegetable oil | 
+2 tsp vanilla extract | 
+2 large eggs | 
+6 oz. semi-sweet chocolate | 
+3/4 cup heavy cream.'
+, 'Preheat oven to 350 degrees | 
+In a large mixing bowl whisk together flour, sugar, 6 Tbsp cocoa, the baking soda, and salt | 
+Add buttermilk, oil, vanilla and eggs | 
+Whisk mixture until very well blended | 
+Pour into prepared baking dish | 
+Bake in preheated oven until toothpick inserted into the center of cake comes out clean, about 27 to 35 minutes | 
 
-Place finely chopped chocolate in a medium heat proof mixing bowl.
-Heat heavy cream in a small saucepan over stovetop on medium heat until just simmering.
+Place finely chopped chocolate in a medium heat proof mixing bowl | 
+Heat heavy cream in a small saucepan over stovetop on medium heat until just simmering | 
 
 Pour hot cream over chocolate chocolate then stir with a rubber spatula until melted and smooth. Let it cool until it\'s a thicker consistency.'
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4'),
+, ''),
 (2, 'Experience the wonder of Chocolate Satin, a classic recipe refined over the years. Mixing rich chocolate with silky smoothness, every bite is a treat for your taste buds. Enjoy it on its own or with your favorite dessert. Treat yourself to Chocolate Satin  it s pure deliciousness!'
-, '../../assets/RECIPES_IMGs/test.jpg'
-, 'Step 1
-Place the chocolate in the metal bowl. Sprinkle with the salt and vanilla extract.
-Step 2
-In the saucepan, bring the cream just to a simmer over medium heat. Pour the hot cream into the bowl with the chocolate and, working rapidly, mix with a wooden spoon to melt the chocolate until you have a smooth and glossy texture, about 2 minutes. Let cool.
-Step 3
-In the bowl of the mixer, whisk the egg whites at the highest speed until frothy. Add the sugar 1 tablespoon at a time and whisk at the highest speed until satiny and stiff peaks form .
-Step 4
-Incorporate one-quarter of the egg white mixture into the chocolate, gently whisking. Then, add the remaining whipped egg white on top. Fold in by hand using a spatula or large spoon: cut through both mixtures, draw along the bottom, bring up the sides, and fold gently until just mixed. Rotate the bowl during folding for efficient blending.
-Step 5
-Pour the mixture into the serving bowl. Refrigerate  at least 6 hours . The dessert will be firmer than a mousse . Scoop into ice cream bowls with an ice cream scoop or large, rounded spoon. Serve chilled.'
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4');
+, '../../assets/RECIPES_IMGs/recipe3/recipe1.jpg','300 g bittersweet chocolate, finely chopped | 
+1/2 teaspoon fine sea salt | 
+1 teaspoon pure vanilla extract | 
+500 ml heavy cream | 
+3 large egg whites at room temperature | 
+1 cup (120 g) sugar'
+, '
+Place the chocolate in the metal bowl. Sprinkle with the salt and vanilla extract | 
+In the saucepan, bring the cream just to a simmer over medium heat | Pour the hot cream into the bowl with the chocolate and, working rapidly, mix with a wooden spoon to melt the chocolate until you have a smooth and glossy texture, about 2 minutes | Let cool | 
+In the bowl of the mixer, whisk the egg whites at the highest speed until frothy | Add the sugar 1 tablespoon at a time and whisk at the highest speed until satiny and stiff peaks form | 
+Incorporate one-quarter of the egg white mixture into the chocolate, gently whisking | Then, add the remaining whipped egg white on top | Fold in by hand using a spatula or large spoon: cut through both mixtures, draw along the bottom, bring up the sides, and fold gently until just mixed | Rotate the bowl during folding for efficient blending | 
+Pour the mixture into the serving bowl | Refrigerate  at least 6 hours | The dessert will be firmer than a mousse | Scoop into ice cream bowls with an ice cream scoop or large, rounded spoon | Serve chilled.'
+, '');
+
 --
 -- Index pour les tables déchargées
 --
