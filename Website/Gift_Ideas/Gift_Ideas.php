@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +18,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Gift Ideas</title>
+
 </head>
 <body>
-    
+<nav class="navbar">
+        <h1 class="logo">Choco Co.</h1>
+        <ul class="nav-links">
+             <li><a href="#Home" class="active">Home</a></li>
+             <li><a href="#Catalog">Catalog</a></li>
+             <li><a href="#Blog">Blog</a></li>
+             <li><a href="#Choco Co.">Choco Co.</a></li>
+         </ul>
+         <div class="icons">
+            <i href="#shooping" class="fa fa-shopping-cart"></i>
+            <i href="#search" class="fa fa-search"></i>
+            <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
+         </div>
+         
+        </nav>
 
     <header>
         <!--navbar-->
+
         <p>GIFT IDEAS</p>
         <div class='line'></div>
     </header>
@@ -86,33 +105,33 @@
     </section>
     <div class="row">
         <div class="col">
-            <img src=".\images\target.png" alt="">
+            <img src="assets\imagesFooter\target.png" alt="">
             <h4>Click & Collect</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\delivery-truck.png" alt="">
+            <img src="assets\imagesFooter\delivery-truck.png" alt="">
             <h4>Fast Delivery</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>  
         </div>
         <hr>
         <div class="col" id="gift">
-            <img src=".\images\gift.png" alt="">
+            <img src="assets\imagesFooter\gift.png" alt="">
             <h4>Personalized Gifts</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\verified.png" alt="">
+            <img src="assets\imagesFooter\verified.png" alt="">
             <h4>Secure Payment</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
             
         </div>
         <hr>
         <div class="col">
-            <img src=".\images\swap.png" alt="">
+            <img src="assets\imagesFooter\swap.png" alt="">
             <h4>Free Return</h4>
             <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         </div>

@@ -48,12 +48,17 @@ html
     font-family: 'Abhaya Libre';
     display: flex;
     justify-content:space-between;
+    cursor: pointer;
 }
 
 li a
 {
     color: var(--clair);
     padding:4em;
+}
+li a:hover
+{
+    opacity: 0.8;
 }
 
 .icons i
@@ -62,6 +67,7 @@ li a
     /*margin-top: 1em;*/
     color:#fff;
     padding:0.5em;
+    cursor: pointer;
     
 }
 
