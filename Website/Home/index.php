@@ -46,37 +46,16 @@
         <div class='row_HOME'>
             <div class='col_HOME'>
                 <div class='content_HOME'>
-                    <img src='TEST.jpg'>
+                    <img src='../../assets/HOME_PIC/TEST.jpg'>
                     <span></span>
-                    <button><a href=''>View more<a></button>
+                    <button><a href='../Catalog/Catalog.php?catalogId=1'>View more<a></button>
                 </div>
             </div>
             <div class='col_HOME'>
                 <div class='content_HOME'>
-                    <img src='TEST.jpg'>
+                    <img src='../../assets/HOME_PIC/TEST.jpg'>
                     <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
+                    <button><a href='../Catalog/Catalog.php?catalogId=2'>View more<a></button>
                 </div>
             </div>
         </div>  
@@ -88,7 +67,7 @@
         <div class="BLOG">
             <div class="Parent">
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
                     <div class="Text_Child">
                         <h2>Title</h2>
@@ -102,13 +81,13 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ad optio perspiciatis porro odit dolore impedit quia ratione eaque unde dolor explicabo quasi culpa temporibus magni, similique quae excepturi voluptatibus?</p>
                     </div>
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
             </div>
 
             <div class="Parent">
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
                     <div class="Text_Child">
                         <h2>Title</h2>
@@ -116,7 +95,7 @@
                     </div>
             </div>
         </div>
-        <button class="Read_More"><a>Read More &rarr;</a></button>
+        <button class="Read_More"><a href='../blog/blog.php'>Read More &rarr;</a></button>
 
 </body>
 </html>
