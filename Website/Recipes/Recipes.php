@@ -24,7 +24,7 @@
              <li><a href="../ChocoCo/ChocoCo.html">Choco Co.</a></li>
          </ul>
          <div class="icons">
-            <i href="#shooping" class="fa fa-shopping-cart"></i>
+            <i href="../Commande/Commande.php" class="fa fa-shopping-cart"></i>
             <i href="#search" class="fa fa-search"></i>
             <span class="quantity">0</span>
          </div>
