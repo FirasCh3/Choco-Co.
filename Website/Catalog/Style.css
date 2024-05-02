@@ -19,10 +19,8 @@
 
 html
 {
-    font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color:#987654;
 }
 
 .navbar 
@@ -47,7 +45,7 @@ html
 
 .nav-links
 {
-    font-size:2em;
+    
     font-family: 'Abhaya Libre';
     display: flex;
     justify-content:space-between;
@@ -57,7 +55,7 @@ html
 li a
 {
     color: var(--clair);
-    padding:4em;
+    padding-right:4em;
 }
 
 li a:hover
@@ -67,8 +65,8 @@ li a:hover
 
 .icons i
 {
-    font-size: 2.5em;
-    /*margin-top: 1em;*/
+    
+    font-size: 1.5em;
     color:#fff;
     padding:0.5em;
     cursor: pointer;
@@ -79,14 +77,11 @@ li a:hover
 {
     background-color: red;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 2.5%;
     right: 5.5%;
     padding:3px 10px;
-    font-size: 1em; /* Adjusted font size */
+    
 
 }
 

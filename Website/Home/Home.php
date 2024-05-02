@@ -27,9 +27,8 @@
          <div class="icons">
             <i href="#shooping" class="fa fa-shopping-cart"></i>
             <i href="#search" class="fa fa-search"></i>
-            <span class="quantity">0</span>
+            <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>
-         
         </nav>
 
 
