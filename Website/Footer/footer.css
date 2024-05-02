@@ -69,7 +69,9 @@
     text-align: center;
     display: block;
 }
-
+.contactus_et_map{
+    position: relative;
+}
 .contactus
 {
     color:#987654;
@@ -126,13 +128,8 @@ i
 {
     display: flex;
     flex-direction: row;
-    border:none ;
-    width:60%;
-<<<<<<< HEAD
-    height:80%;
+    border:none;
     width:67%;
-=======
->>>>>>> 23529603b4a4c188714ffb6f261836b4dd7b9cf2
     height:80%;
     font-size: 1em;
     margin-top:7%;
