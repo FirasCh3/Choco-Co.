@@ -125,7 +125,7 @@ html{
     justify-content: center;
     align-items: center;
     gap:10vh;
-}
+}   
 header{ 
     background-color: antiquewhite;/*TEST*/
     /*background-image: url("../../assets/RECIPES_IMGs/RECIPESHEADER2.jpg");*/
@@ -200,12 +200,12 @@ p{
 }
 
 .col1 , .col2{
-    border: 1px solid red;
     flex: 1;
     text-align: center;
     position: relative;
 }
 .col11 , .col22{
+    overflow-y:hidden ;
     flex: 1;
 }
 
