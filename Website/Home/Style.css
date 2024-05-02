@@ -14,13 +14,6 @@
     
 }
 
-html
-{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 .navbar 
 {
     display: flex;
@@ -52,7 +45,7 @@ html
 li a
 {
     color: var(--clair);
-    padding:4em;
+    padding-right:4em;
 }
 
 .icons i
