@@ -23,9 +23,9 @@
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
              <li><a href="index.php" class="active">Home</a></li>
-             <li><a href="#Catalog">Catalog</a></li>
+             <li><a href="../Catalog/Catalog.php">Catalog</a></li>
              <li><a href="../blog/blog.php">Blog</a></li>
-             <li><a href="#Choco Co.">Choco Co.</a></li>
+             <li><a href="../ChocoCo/ChocoCo.html">Choco Co.</a></li>
          </ul>
          <div class="icons">
             <i href="#shooping" class="fa fa-shopping-cart"></i>
