@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 29 avr. 2024 à 21:34
+-- Généré le : ven. 03 mai 2024 à 00:31
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `chococo`
 --
+DROP DATABASE `chococo`;
 CREATE DATABASE IF NOT EXISTS `chococo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `chococo`;
 
@@ -29,18 +30,40 @@ USE `chococo`;
 -- Structure de la table `catalog`
 --
 
-CREATE TABLE IF NOT EXISTS `catalog` (
+CREATE TABLE `catalog` (
   `catalog_id` int(11) NOT NULL,
-  `catalog_name` varchar(100) NOT NULL
+  `catalog_name` varchar(100) NOT NULL,
+  `catalog_image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `catalog`
 --
 
-INSERT INTO `catalog` (`catalog_id`, `catalog_name`) VALUES
-(1, 'test'),
-(2, 'test2');
+INSERT INTO `catalog` (`catalog_id`, `catalog_name`, `catalog_image`) VALUES
+(1, 'test', '../../assets/catalog_image/'),
+(2, 'test2', '../../assets/catalog_image/');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `orders`
+--
+
+CREATE TABLE `orders` (
+  `order_id` int(11) NOT NULL,
+  `order_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `quantity` int(11) NOT NULL,
+  `Product_id` int(11) NOT NULL,
+  `firstname` varchar(200) NOT NULL,
+  `lastname` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `number` int(8) NOT NULL,
+  `zip` int(4) NOT NULL,
+  `city` varchar(200) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `pays` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -48,7 +71,7 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`) VALUES
 -- Structure de la table `products`
 --
 
-CREATE TABLE IF NOT EXISTS `products` (
+CREATE TABLE `products` (
   `Product_id` int(11) NOT NULL,
   `Product_image` varchar(100) NOT NULL,
   `Product_price` float NOT NULL,
@@ -67,10 +90,9 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 (5, '../../assets/product_images/a6e3a88a55e24f91e90e30cfc2040cbc.jpg', 50, 'oh shit', 'produit', 1),
 (6, '../../assets/product_images/pic.png', 300, 'nice', 'produit', 2),
 (7, '../../assets/product_images/tetiana-bykovets-H22N-9s8AUw-unsplash.jpg', 10, 'yo bro', 'produit', 1),
-
-(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret',NULL),
-(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret',NULL),
-(10,'../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret',NULL);
+(8, '../../assets/COFFRETS/test.jpg', 100, 'COFFRET1', 'coffret', NULL),
+(9, '../../assets/COFFRETS/test.jpg', 200, 'COFFRET2', 'coffret', NULL),
+(10, '../../assets/COFFRETS/test.jpg', 450, 'COFFRET3', 'coffret', NULL);
 
 -- --------------------------------------------------------
 
@@ -78,7 +100,7 @@ INSERT INTO `products` (`Product_id`, `Product_image`, `Product_price`, `Product
 -- Structure de la table `recipes`
 --
 
-CREATE TABLE IF NOT EXISTS `recipes` (
+CREATE TABLE `recipes` (
   `recipe_id` int(11) NOT NULL,
   `recipe_about` text NOT NULL,
   `recipe_image` text NOT NULL,
@@ -93,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 
 INSERT INTO `recipes` (`recipe_id`, `recipe_about`, `recipe_image`, `recipe_ingredients`, `recipe_steps`, `recipe_tutorial`) VALUES
 (0, 'These classic cookies are a go-to sweet treat that are easy to whip up and store well-if they last! We use two kinds of sugar: granulated for crunch and brown for chewiness.'
-, '../../assets/RECIPES_IMGs/test.jpg'
+, '../../assets/RECIPES_IMGs/recipe1/cookies1.jpg'
 , '1/4 cups flour
 1 teaspoon baking soda
 Fine salt
@@ -112,9 +134,8 @@ Scoop 12 tablespoons of dough onto each prepared baking sheet. Roll the dough in
 Let the baking sheets cool completely,  Store the cookies in a container at room temperature for up to 5 days.
 
 '
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4'),
-(1, 'The easiest Chocolate Cake recipe you’ll ever make and it only needs a few simple ingredients! Plus the cake batter is made in one bowl and no mixer is required.'
-, '../../assets/RECIPES_IMGs/test.jpg'
+, ''),(1, 'The easiest Chocolate Cake recipe you ll ever make and it only needs a few simple ingredients! Plus the cake batter is made in one bowl and no mixer is required.'
+, '../../assets/RECIPES_IMGs/recipe2/cake1.jpg'
 , '142g flour 
 200g sugar
 35g  cocoa powder
@@ -137,9 +158,14 @@ Place finely chopped chocolate in a medium heat proof mixing bowl.
 Heat heavy cream in a small saucepan over stovetop on medium heat until just simmering.
 
 Pour hot cream over chocolate chocolate then stir with a rubber spatula until melted and smooth. Let it cool until it\'s a thicker consistency.'
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4'),
+, ''),
 (2, 'Experience the wonder of Chocolate Satin, a classic recipe refined over the years. Mixing rich chocolate with silky smoothness, every bite is a treat for your taste buds. Enjoy it on its own or with your favorite dessert. Treat yourself to Chocolate Satin  it s pure deliciousness!'
-, '../../assets/RECIPES_IMGs/test.jpg'
+, '../../assets/RECIPES_IMGs/recipe3/recipe1.jpg','300 g bittersweet chocolate, finely chopped 
+1/2 teaspoon fine sea salt
+1 teaspoon pure vanilla extract
+500 ml heavy cream
+3 large egg whites at room temperature 
+1 cup (120 g) sugar'
 , 'Step 1
 Place the chocolate in the metal bowl. Sprinkle with the salt and vanilla extract.
 Step 2
@@ -150,7 +176,8 @@ Step 4
 Incorporate one-quarter of the egg white mixture into the chocolate, gently whisking. Then, add the remaining whipped egg white on top. Fold in by hand using a spatula or large spoon: cut through both mixtures, draw along the bottom, bring up the sides, and fold gently until just mixed. Rotate the bowl during folding for efficient blending.
 Step 5
 Pour the mixture into the serving bowl. Refrigerate  at least 6 hours . The dessert will be firmer than a mousse . Scoop into ice cream bowls with an ice cream scoop or large, rounded spoon. Serve chilled.'
-, 'video_for_test_only/The Most AMAZING Vanilla Cake Recipe.mp4');
+, '');
+
 --
 -- Index pour les tables déchargées
 --
@@ -160,6 +187,13 @@ Pour the mixture into the serving bowl. Refrigerate  at least 6 hours . The dess
 --
 ALTER TABLE `catalog`
   ADD PRIMARY KEY (`catalog_id`);
+
+--
+-- Index pour la table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_id`),
+  ADD KEY `Product_id` (`Product_id`);
 
 --
 -- Index pour la table `products`
@@ -179,14 +213,26 @@ ALTER TABLE `catalog`
   MODIFY `catalog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT pour la table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
-  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`Product_id`) REFERENCES `products` (`Product_id`);
 
 --
 -- Contraintes pour la table `products`

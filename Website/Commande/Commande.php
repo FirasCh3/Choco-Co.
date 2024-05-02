@@ -86,7 +86,7 @@
             <input type="number" placeholder="Zip code" maxlength="4" name="zip">
             <input type="text" placeholder="Address" name="address">
             <input type="text" placeholder="City" name="city">
-            <select>
+            <select name="pays">
                 <option selected>Tunisia</option>
                 <option>France</option>
             </select>
