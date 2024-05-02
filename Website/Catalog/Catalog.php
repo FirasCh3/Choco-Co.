@@ -71,7 +71,7 @@
                         <div class='content'>
                             <img src='$row[Product_image]'>
                             <span></span>
-                            <button><a href=../Order/Order.php?productId=$row[Product_id]>Order now<a></button>
+                            <button><a href=../Order/Order.php?productId=$row[Product_id]>Order now</a></button>
                         </div>
                         <div class='content-text'>
                             <p>$row[Product_name]</p>
@@ -84,8 +84,6 @@
         ?>
     </div>
     </section>
-        <!--
-            footer
-        -->
+   
 </body>
 </html>
