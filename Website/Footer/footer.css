@@ -8,13 +8,13 @@
 #maps
 {
     margin: auto;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     position: static;
     width: 90%;
     
 }
 
-.containers
+.footer_containers
 {
     color:#987654;
     background-color: #fff;
@@ -29,10 +29,11 @@
     left: 50%; 
     padding: 1rem 0;
     transform: translate(-50%, -50%);
+    position: static;
 
 }
 
-.contactus{
+.footer_contactus{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,7 +41,7 @@
     margin-top: 2rem;  
 }
 
-.containers h1
+.footer_containers h1
 {
     color: #987654;
     font-size: 2.5rem;
@@ -51,7 +52,7 @@
     
 }
 
-.description
+.footer_description
 {   
 
     display: flex;
@@ -65,7 +66,7 @@
     
 }
 
-.formulaire
+.footer_formulaire
 {   
     display: flex;
     justify-content: center;
@@ -120,7 +121,6 @@ input[type="submit"] {
     border: 1px solid #987654;
     justify-items: center;
     border-radius: 1em;
-    
     background-color: #ffff;
     width: 8em;
 
@@ -133,46 +133,52 @@ input[type="submit"]:hover {
     transition: all 1s ease;
 }
 
-.row 
+.footer_row 
 {
     display:flex;
-    height: 26%;
+    height: 30%;
     width: auto;
-    gap:3em;
+    gap:2em;
     margin: 0 auto;
-    justify-content:center;
+    justify-content:space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.column 
+.footer_column 
 {   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     flex:1;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+  
 }
 
-.column img 
+hr{
+    height: 13rem;
+
+}
+.footer_column img 
 {
-    width:45%;
+    width:3rem;
     height: auto;
     justify-content: center;
     margin-top:15%
 
 }
 
-.column h4 
+.footer_column h4 
 {
     align-items: center;
     text-align: center;
     font-family: "Abhaya Libre";
-    font-size: 3em;
+    font-size: 1rem;
     margin-top: 1.5em;
 }
 
-.column p 
+.footer_column p 
 {
     margin-top: 12%;
     text-align: center;
@@ -180,7 +186,7 @@ input[type="submit"]:hover {
 
 }
 
-.bas
+.footer_bas
 {
     background-color: black;
     color:white;
@@ -194,26 +200,34 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-    .formulaire
+    .footer_formulaire
     {
         font-size: 0.85em;
         margin-top: 5em;
+        width: 40%;
+        gap: 1rem;
 
     }
-    .description
+    .footer_description
     {
         margin-top: 3.25em;
     }
-    .column {
+    .footer_row{
+        margin-top:25rem;
+    }
+    .footer_column {
         width: 90%; 
         margin-left: 5%; 
         margin-right: 5%; 
         margin-bottom: 2em; 
     }
 
-    .bas 
+    .footer_bas 
     {
         font-size: 1.5em;
+    }
+    .footer_contactus{
+        flex-wrap: wrap;
     }
 
 }

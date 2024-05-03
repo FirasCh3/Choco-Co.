@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+ 
     <title>Recipes</title>
 </head>
 <body>
@@ -103,5 +104,70 @@
             mysqli_close($conn);   
         ?>
     </div>
+
+
+    
+
+<footer class="footer_services">
+        <div class="footer_contactus_et_map">
+
+            <div class="footer_containers">
+                    <h1>Contact us</h1>
+                    <form class="footer_formulaire" action="">   
+                                                    
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Mail" required>
+                            <textarea placeholder ="Message"></textarea>
+                            <input type="submit" value="Send">
+                       
+                    </form>
+            </div>
+            
+            <div class="footer_column" id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.732494393068!2d-3.536356214648855!3d50.7249017985369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da43958c82c81%3A0x3e47e71aceb7a4f3!2sChococo%20Exeter!5e0!3m2!1sen!2stn!4v1713897868474!5m2!1sen!2stn" width="94%" height=400em style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+  
+
+    <div class="footer_row">
+        <div class="footer_column">
+            <img src="../../assets/imagesFooter/target.png" alt="target">
+            <h4>Click & Collect</h4>
+            <p>You can collect whatever products you want.</p>
+        </div>
+        <hr>
+        <div class="footer_column">
+            <img src="../../assets/imagesFooter/delivery-truck.png" alt="delivery-truck">
+            <h4>Fast Delivery</h4>
+            <p>We provide really fast delivery!</p>  
+        </div>
+        <hr>
+        <div class="footer_column" id="gift">
+            <img src="../../assets/imagesFooter/gift.png" alt="gift">
+            <h4>Personalized Gifts</h4>
+            <p>We provide really wonderful gifts!</p>
+        
+        </div>
+        <hr>
+        <div class="footer_column">
+            <img src="../../assets/imagesFooter/verified.png" alt="verified">
+            <h4>Secure Payment</h4>
+            <p>Don't worry about the payment part, we provide a secure payment!</p>
+            
+        </div>
+        <hr>
+        <div class="footer_column">
+            <img src="../../assets/imagesFooter/swap.png" alt="swap">
+            <h4>Free Return</h4>
+            <p>In case any justified issue, we offer a free return</p>
+        </div>
+
+    </div>
+    <!-- Droits d'auteur -->
+    <div class="footer_bas">&copy; Choco Co. -2024</div> 
+      
+</footer>
+
 </body>
 </html>
