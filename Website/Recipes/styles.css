@@ -282,104 +282,6 @@ p{
     font-family:'Abhaya Libre';
 }
 
-#maps
-{
-    margin: auto;
-    margin-bottom: 8%;
-    position: static;
-    width: 90%;
-    
-}
-
-.footer_containers
-{
-    color:#987654;
-    background-color: #fff;
-    border: 2px solid #987654;
-    /*position: absolute;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    top: 80%; 
-    left: 50%; 
-    padding: 1rem 0;
-    transform: translate(50%, 130%);
-    position: static;
-
-}
-
-.footer_containers h1
-{
-    color: #987654;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 1rem;
-    height:18%;
-    width: 100%;
-    
-}
-
-.footer_formulaire
-{   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border:none;
-    width: 60%;
-    font-size: 1em;
-
-
-}
-
-#location
-{
-    margin-bottom: 11%;
-}
-#phone
-{
-    margin-bottom: 11%;
-}
-
-
-input,select,textarea 
-{
-    margin: 10px 0 0 0;
-    width: 90%;
-    min-height: 2em;
-    max-height: 4em;
-    color: #987654;
-    font-family:'Abhaya Libre';
-    font-size: 0.9em;
-    border: 0.5px solid lightgray;
-}
-
-textarea
-{
-    max-height: 1rem;
-    resize: none;
-}
-
-input[type="submit"] {
-    color: #987654;
-    display: fixed;
-    border: 1px solid #987654;
-    justify-items: center;
-    border-radius: 1em;
-    background-color: #ffff;
-    width: 8em;
-
-}
-
-input[type="submit"]:hover {
-    background-color: #987654;
-    color: #fff;
-    cursor: pointer;
-    transition: all 1s ease;
-}
-
 .footer_row 
 {
     display:flex;
@@ -447,18 +349,6 @@ hr{
 }
 
 @media (max-width: 768px) {
-    .footer_formulaire
-    {
-        font-size: 0.85em;
-        margin-top: 5em;
-        width: 40%;
-        gap: 1rem;
-
-    }
-    .footer_description
-    {
-        margin-top: 3.25em;
-    }
     .footer_row{
         margin-top:25rem;
     }
@@ -473,8 +363,6 @@ hr{
     {
         font-size: 1.5em;
     }
-    .footer_contactus{
-        flex-wrap: wrap;
-    }
+    
 
 }
