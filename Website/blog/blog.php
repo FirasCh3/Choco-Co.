@@ -78,10 +78,10 @@
 
     <div class="carousel" duration="7000">
     <ul tabindex="0">
-        <li id="c1_slide1"><div>Gift Chocolate!<br /><a href="https://www.google.com">See product</a></div></li>  
-        <li id="c1_slide2"><div>Gift Chocolate!<br /><a href="https://www.google.com">See product</a></div></li>  
-        <li id="c1_slide3"><div>Gift Chocolate!<br /><a href="https://www.google.com">See product</a></div></li>  
-        <li id="c1_slide4"><div>Gift Chocolate!<br /><a href="https://www.google.com">See product</a></div></li>  
+        <li id="c1_slide1"><div>Gift Chocolate!<br /><a href="../Gift_ideas/Gift_Ideas.php">See product</a></div></li>  
+        <li id="c1_slide2"><div>Gift Chocolate!<br /><a href="../Gift_ideas/Gift_Ideas.php">See product</a></div></li>  
+        <li id="c1_slide3"><div>Gift Chocolate!<br /><a href="../Gift_ideas/Gift_Ideas.php">See product</a></div></li>  
+        <li id="c1_slide4"><div>Gift Chocolate!<br /><a href="../Gift_ideas/Gift_Ideas.php">See product</a></div></li>  
     </ul>
     <ol>
         <li><a href="#c1_slide1"></a></li>

@@ -19,6 +19,7 @@
                 $req = "insert into orders values('','$date','$item->product_quantity', '$item->product_id','$firstname','$lastname','$email','$number','$zip','$city','$address','$pays')";
                 mysqli_query($conn, $req);
             }
+            unset($_SESSION["Cart"]);
         }else{
             $_SESSION["flag"]="No products in cart";
         }

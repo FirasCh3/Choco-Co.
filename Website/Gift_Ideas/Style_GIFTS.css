@@ -25,8 +25,7 @@
     width: 100vw;
     height: 5vw;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
-
+    background: rgb(0, 0, 0, 0.2);
 }
 
 .logo
@@ -34,7 +33,7 @@
     font-family: 'Jim Nightshade';
     color: var(--clair);
     font-size: 3.7em;
-    
+    white-space: nowrap;
 }
 
 .nav-links
@@ -45,11 +44,14 @@
     justify-content:space-between;
     cursor: pointer;
 }
-
+li{
+    overflow-y: hidden;
+}
 li a
 {
     color: var(--clair);
     padding-right:4em;
+    white-space: nowrap;
 }
 
 li a:hover
@@ -111,8 +113,7 @@ li a:hover
 
 
 header{
-    /*background-image: url("");*/
-    background-color: burlywood;/**TESTTT*/
+    background-image: url("../../assets/Gift Ideas/header.jpg");
     margin-bottom: 30px;
     background-size: cover;
     background-position:center;
@@ -159,6 +160,7 @@ header p{
 .col_GIFT .content-text_GIFT{
     width: 100%;
     flex: 15%;
+    overflow-y: hidden;
 }
 
 .col_GIFT .content_GIFT img{
@@ -219,13 +221,13 @@ header p{
 }
 /*----------------------------------------------------------------------*/
 .customize{
-    background-image: url("");
-    background-color: antiquewhite;/**TESTTT*/
+    background-image: url("../../assets/Gift Ideas/box-essentials-small.jpg");
+    color: white;
     margin-top: 50vh;
     background-size: cover;
     background-position:center;
     width: 90%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;

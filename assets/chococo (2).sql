@@ -26,7 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `catalog`
 --
-DROP TABLE `chococo`;
+CREATE DATABASE IF NOT EXISTS `chococo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `chococo`;
+
 CREATE TABLE `catalog` (
   `catalog_id` int(11) NOT NULL,
   `catalog_name` varchar(100) NOT NULL,

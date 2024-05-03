@@ -25,7 +25,7 @@
     width: 100vw;
     height: 5vw;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
+    background:rgba(0, 0, 0, 0.6) ;
 
 }
 
@@ -110,7 +110,7 @@ li a:hover
 }
 
 header{
-    background-image: url("../../assets/product_images/bg_blog.jpg");
+    background-image: url("../../assets/blog/photo-1604514813560-1e4f5726db65.jpg");
     margin-bottom: 20px;
     background-size: cover;
     background-position:center;
