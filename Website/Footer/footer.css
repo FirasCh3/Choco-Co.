@@ -2,6 +2,135 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family:'Abhaya Libre';
+}
+
+#maps
+{
+    margin: auto;
+    margin-bottom: 20%;
+    position: static;
+    width: 90%;
+    
+}
+
+.containers
+{
+    color:#987654;
+    background-color: #fff;
+    border: 2px solid #987654;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    top: 60%; 
+    left: 50%; 
+    padding: 1rem 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.contactus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;  
+}
+
+.containers h1
+{
+    color: #987654;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    height:18%;
+    width: 100%;
+    
+}
+
+.description
+{   
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 1.1em;
+    top: 30%;
+    
+    
+}
+
+.formulaire
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:none;
+    width: 60%;
+    font-size: 1em;
+
+
+}
+
+i 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2%;
+    
+}
+
+#location
+{
+    margin-bottom: 11%;
+}
+#phone
+{
+    margin-bottom: 11%;
+}
+
+
+input,select,textarea 
+{
+    margin: 10px 0 0 0;
+    width: 90%;
+    min-height: 2em;
+    max-height: 4em;
+    color: #987654;
+    font-family:'Abhaya Libre';
+    font-size: 0.9em;
+    border: 0.5px solid lightgray;
+}
+
+textarea
+{
+    max-height: 1rem;
+    resize: none;
+}
+
+input[type="submit"] {
+    color: #987654;
+    display: fixed;
+    border: 1px solid #987654;
+    justify-items: center;
+    border-radius: 1em;
+    
+    background-color: #ffff;
+    width: 8em;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #987654;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 .row 
@@ -15,17 +144,17 @@
     flex-wrap: wrap;
 }
 
-.col 
-{
+.column 
+{   
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     flex:1;
-    display: flex;
     margin-bottom: 3em;
 }
 
-.col img 
+.column img 
 {
     width:45%;
     height: auto;
@@ -34,27 +163,21 @@
 
 }
 
-.col h4 
+.column h4 
 {
     align-items: center;
     text-align: center;
     font-family: "Abhaya Libre";
-    font-size: 1.5em;
+    font-size: 3em;
     margin-top: 1.5em;
 }
 
-.col p 
+.column p 
 {
     margin-top: 12%;
     text-align: center;
     font-family: "Abhaya Libre";
-}
 
-#maps
-{
-    margin-bottom: 20%;
-    position: static;
-    width: 40wh;
 }
 
 .bas
@@ -64,117 +187,12 @@
     width:100%;
     font-family:'Abhaya Libre';
     justify-content: center;
-    margin-top: 1.5em;
-    font-size: 2em;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     text-align: center;
     display: block;
 }
 
-.contactus
-{
-    color:#987654;
-    font-family:'Abhaya Libre';
-    background-color: #ffff;
-    border-style:ridge;
-    border-color: #a99581;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 65%;
-    height: 42%;
-    top: 46%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-}
-
-.contactus h1
-{
-    font-size: 220%;
-    text-align: center;
-    height:18%;
-    width: 100%;
-}
-
-.description
-{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 80%;
-    font-size: 1.1em;
-    margin-top:7%;
-    margin-left: 4%;
-}
-
-
-i 
-{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 2%;
-    
-}
-#location
-{
-    margin-bottom: 11%;
-}
-#phone
-{
-    margin-bottom: 11%;
-}
-.formulaire
-{
-    display: flex;
-    flex-direction: row;
-    border:none ;
-    width:60%;
-<<<<<<< HEAD
-    height:80%;
-    width:67%;
-=======
->>>>>>> 23529603b4a4c188714ffb6f261836b4dd7b9cf2
-    height:80%;
-    font-size: 1em;
-    margin-top:7%;
-}
-
-h2
-{
-    margin-top: -0.5em;
-    margin-bottom: 1em;
-    margin-right: 5em;
-}
-
-input,select,textarea 
-{
-    margin: 10px 0 0 0;
-    width: 50%;
-    min-height: 2em;
-    max-height: 4em;
-    border:none;
-    color: #987654;
-    font-family:'Abhaya Libre';
-    font-size: 0.9em;
-}
-textarea
-{
-    max-height: 40px;
-    resize: vertical;
-}
-input[type="submit"]
-{
-    font-family:'Abhaya Libre';
-    color:#987654;
-    display:fixed;
-    border:solid 1px;
-    justify-items: center;
-    border-radius: 2em;
-    border-color: #987654;
-    background-color: #ffff;
-    width:7em;
-    height: 0.5em;
-    
-}
 @media (max-width: 768px) {
     .formulaire
     {
@@ -186,7 +204,7 @@ input[type="submit"]
     {
         margin-top: 3.25em;
     }
-    .col {
+    .column {
         width: 90%; 
         margin-left: 5%; 
         margin-right: 5%; 
@@ -197,4 +215,5 @@ input[type="submit"]
     {
         font-size: 1.5em;
     }
+
 }
