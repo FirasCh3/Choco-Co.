@@ -92,7 +92,46 @@
     <div class="prev">&lsaquo;</div>
     <div class="next">&rsaquo;</div>
     </div>
+    <footer class="footer_services">
 
+<div class="footer_row">
+    <div class="footer_column">
+        <img src="../../assets/imagesFooter/target.png" alt="target">
+        <h4>Click & Collect</h4>
+        <p>You can collect whatever products you want.</p>
+    </div>
+    <hr>
+    <div class="footer_column">
+        <img src="../../assets/imagesFooter/delivery-truck.png" alt="delivery-truck">
+        <h4>Fast Delivery</h4>
+        <p>We provide really fast delivery!</p>  
+    </div>
+    <hr>
+    <div class="footer_column" id="gift">
+        <img src="../../assets/imagesFooter/gift.png" alt="gift">
+        <h4>Personalized Gifts</h4>
+        <p>We provide really wonderful gifts!</p>
+    
+    </div>
+    <hr>
+    <div class="footer_column">
+        <img src="../../assets/imagesFooter/verified.png" alt="verified">
+        <h4>Secure Payment</h4>
+        <p>Don't worry about the payment part, we provide a secure payment!</p>
+        
+    </div>
+    <hr>
+    <div class="footer_column">
+        <img src="../../assets/imagesFooter/swap.png" alt="swap">
+        <h4>Free Return</h4>
+        <p>In case any justified issue, we offer a free return</p>
+    </div>
+
+</div>
+<!-- Droits d'auteur -->
+<div class="footer_bas">&copy; Choco Co. -2024</div> 
+  
+</footer>
 
 
 </body>

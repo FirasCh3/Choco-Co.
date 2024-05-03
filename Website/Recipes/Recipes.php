@@ -106,8 +106,6 @@
     </div>
 
 
-    
-
 <footer class="footer_services">
 
     <div class="footer_row">

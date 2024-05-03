@@ -198,3 +198,95 @@ p{
     top:9%;
 }
 /*---------------------------------------*/
+/**** footer ****/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Abhaya Libre';
+}
+
+.footer_row 
+{
+    display:flex;
+    height: 30%;
+    width: auto;
+    gap:2em;
+    margin: 0 auto;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer_column 
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex:1;
+    margin-bottom: 2em;
+  
+}
+
+hr{
+    height: 13rem;
+
+}
+.footer_column img 
+{
+    width:3rem;
+    height: auto;
+    justify-content: center;
+    margin-top:15%;
+}
+
+.footer_column h4 
+{
+    align-items: center;
+    text-align: center;
+    font-family: "Abhaya Libre";
+    font-size: 1rem;
+    margin-top: 1.5em;
+}
+
+.footer_column p 
+{
+    margin-top: 12%;
+    text-align: center;
+    font-family: "Abhaya Libre";
+
+}
+
+.footer_bas
+{
+    background-color: black;
+    color:white;
+    width:100%;
+    font-family:'Abhaya Libre';
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .footer_row{
+        margin-top:25rem;
+    }
+    .footer_column {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        margin-bottom: 2em; 
+    }
+
+    .footer_bas 
+    {
+        font-size: 1.5em;
+    }
+    
+
+}
