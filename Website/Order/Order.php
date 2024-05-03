@@ -36,7 +36,7 @@
             <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>
         </nav>
-
+<div class="content">
     <div class="info">
         <?php
             require_once("../connexion.php");
@@ -111,7 +111,7 @@
                     mysqli_close($conn);
                 ?>
             </div>
-
+</div>
     <!--
        footer
     -->
