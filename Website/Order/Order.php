@@ -26,7 +26,7 @@
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
              <li><a href="../Home/index.php" class="active">Home</a></li>
-             <li><a href="../Catalog/Catalog.php">Catalog</a></li>
+             <!--<li><a href="../Catalog/Catalog.php">Catalog</a></li>-->
              <li><a href="../blog/blog.php">Blog</a></li>
              <li><a href="../ChocoCo/ChocoCo.html">Choco Co.</a></li>
          </ul>
