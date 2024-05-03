@@ -4,8 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
+    font-family: "abhaya libre";
+    overflow-x: hidden;
 }
 
 :root
@@ -15,15 +15,6 @@
     --black :#000000;
     
 }
-
-html
-{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    background-color:#987654;
-}
-
 .navbar 
 {
     display: flex;
@@ -32,7 +23,7 @@ html
     width: 100vw;
     height: 5vw;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
+    background: rgb(0, 0, 0, 0.8);
 
 }
 
@@ -56,7 +47,7 @@ html
 li a
 {
     color: var(--clair);
-    padding:4em;
+    padding-right:4em;
 }
 
 li a:hover
@@ -67,21 +58,21 @@ li a:hover
 .icons i
 {
     font-size: 2.5em;
-    /*margin-top: 1em;*/
     color:#fff;
     padding:0.5em;
     cursor: pointer;
+    
+}
+.icons{
+    display: flex;
 }
 .icons span
 {
     background-color: red;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 2.5%;
-    right: 5.5%;
+    right: 8.5%;
     padding:3px 10px;
     font-size: 1em; /* Adjusted font size */
 
@@ -113,8 +104,6 @@ li a:hover
     .icons {
         margin-top: 1em;
     }
-
-
 }
 
 
@@ -130,7 +119,7 @@ html{
     font-family: "Abhaya Libre", serif;
     overflow-x: hidden;  
 }
-body{
+.content{
     color: white;
     background-color: black;
     display: flex;
@@ -140,7 +129,7 @@ body{
     gap:10vh;
 }
 header{ 
-    background-image: url("../../assets/ChocoCoIMGs/header.jpg");
+    background-image: url("../../assets/ChocoCoIMGs/HEADER.jpg");
     background-position: center;
     background-size: cover;   
     height: 80vh;
@@ -178,6 +167,7 @@ p{
 
 .col1 , .col11 , .col2 , .col22 , .col3 , .col33{
     flex: 1;
+    overflow-y: hidden;
 }
 .col11 , .col2 , .col33{
     text-align: center;
@@ -199,12 +189,12 @@ p{
 }
 .col11 .line , .col33 .line{
     left: 0;
-    top:10%;
-    right:73%
+    top:9%;
+    right:85%;
 }
 .col2 .line{
     right:0;
-    left:70%;
-    top:10.5%;
+    left:85%;
+    top:9%;
 }
 /*---------------------------------------*/

@@ -8,16 +8,18 @@
     $zip = trim($_POST["zip"]);
     $city = trim($_POST["city"]);
     $address = trim($_POST["address"]);
-    if(empty($firstname) || empty($lastname) || empty($email) || empty($number) || empty($zip) || empty($city) ||empty($address)){
+    $pays = trim($_POST["pays"]);
+    if(empty($firstname) || empty($lastname) || empty($email) || empty($number) || empty($zip) || empty($city) ||empty($address)||empty($pays)){
         $_SESSION["flag"] = "Invalid input";
     }else{
         if(isset($_SESSION["Cart"])){
             foreach($_SESSION["Cart"] as $json){
                 $item = json_decode($json);
                 $date = $date = date("Y-m-d H:i:s"); 
-                $req = "insert into orders values('','$date','$item->product_quantity', '$item->product_id','$firstname','$lastname','$email','$number','$zip','$city','$address')";
+                $req = "insert into orders values('','$date','$item->product_quantity', '$item->product_id','$firstname','$lastname','$email','$number','$zip','$city','$address','$pays')";
                 mysqli_query($conn, $req);
             }
+            unset($_SESSION["Cart"]);
         }else{
             $_SESSION["flag"]="No products in cart";
         }

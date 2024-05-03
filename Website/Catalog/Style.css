@@ -31,7 +31,7 @@ html
     width: 100vw;
     height: 5vw;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
+    background: rgb(0, 0, 0, 0.8);
 
 }
 
@@ -217,4 +217,3 @@ header p{
     color: white;
     text-decoration: none;
 }
-

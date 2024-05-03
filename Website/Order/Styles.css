@@ -7,7 +7,6 @@
     font-family: "abhaya libre";
     overflow-x: hidden;
 }
-
 :root
 {
     --clair : #fff;
@@ -15,6 +14,8 @@
     --black :#000000;
     
 }
+
+
 .navbar 
 {
     display: flex;
@@ -23,8 +24,7 @@
     width: 100vw;
     height: 5vw;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(23, 21, 21,0.7), rgb(92, 87, 87,0.7));
-
+    background: rgb(0, 0, 0, 0.8);
 }
 
 .logo
@@ -32,7 +32,7 @@
     font-family: 'Jim Nightshade';
     color: var(--clair);
     font-size: 3.7em;
-    
+    white-space: nowrap;
 }
 
 .nav-links
@@ -43,29 +43,33 @@
     justify-content:space-between;
     cursor: pointer;
 }
-
+li{
+    overflow-y: hidden;
+}
 li a
 {
     color: var(--clair);
     padding-right:4em;
+    white-space: nowrap;
 }
 
 li a:hover
 {
     opacity: 0.8;
 }
-
+.icons{
+    display: flex;
+}
 .icons i
 {
     font-size: 2.5em;
+    /*margin-top: 1em;*/
     color:#fff;
     padding:0.5em;
     cursor: pointer;
     
 }
-.icons{
-    display: flex;
-}
+
 .icons span
 {
     background-color: red;
@@ -77,7 +81,6 @@ li a:hover
     font-size: 1em; /* Adjusted font size */
 
 }
-
 @media (max-width: 1150px) {
     .navbar {
         /*flex-direction: column;*/
@@ -106,7 +109,7 @@ li a:hover
     }
 }
 
-body{
+.content{
     background-color: black;
 }
 .info{
@@ -214,6 +217,7 @@ form{
     height: 40vh;
     flex: 1;
     overflow-y: hidden;
+    background-color: red;
 }
 .similair-articles .row .col img{
     width: 100%;

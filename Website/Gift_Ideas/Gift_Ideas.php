@@ -24,13 +24,13 @@
 <nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
-             <li><a href="#Home" class="active">Home</a></li>
-             <li><a href="#Catalog">Catalog</a></li>
-             <li><a href="#Blog">Blog</a></li>
-             <li><a href="#Choco Co.">Choco Co.</a></li>
+             <li><a href="../Home/index.php" class="active">Home</a></li>
+             <!--<li><a href="../Catalog/Catalog.php">Catalog</a></li>-->
+             <li><a href="../blog/blog.php">Blog</a></li>
+             <li><a href="../ChocoCo/ChocoCo.html">Choco Co.</a></li>
          </ul>
          <div class="icons">
-            <i href="#shooping" class="fa fa-shopping-cart"></i>
+            <a href="../Commande/Commande.php"><i href="" class="fa fa-shopping-cart"></i></a>
             <i href="#search" class="fa fa-search"></i>
             <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>

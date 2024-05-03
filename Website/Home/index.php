@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once("../connexion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +23,13 @@
     <nav class="navbar">
         <h1 class="logo">Choco Co.</h1>
         <ul class="nav-links">
-             <li><a href="index.php" class="active">Home</a></li>
-             <li><a href="#Catalog">Catalog</a></li>
+             <li><a href="../Home/index.php" class="active">Home</a></li>
+             <!--<li><a href="../Catalog/Catalog.php">Catalog</a></li>-->
              <li><a href="../blog/blog.php">Blog</a></li>
-             <li><a href="#Choco Co.">Choco Co.</a></li>
+             <li><a href="../ChocoCo/ChocoCo.html">Choco Co.</a></li>
          </ul>
          <div class="icons">
-            <i href="#shooping" class="fa fa-shopping-cart"></i>
+            <a href="../Commande/Commande.php"><i href="" class="fa fa-shopping-cart"></i></a>
             <i href="#search" class="fa fa-search"></i>
             <span class="quantity"><?php if(isset($_SESSION['Cart'])){echo sizeof($_SESSION['Cart']);}else{echo '0';}?></span>
          </div>
@@ -44,41 +45,22 @@
         </div>
         <!---------------------------------------------------------------------->
         <div class='row_HOME'>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
-            <div class='col_HOME'>
-                <div class='content_HOME'>
-                    <img src='TEST.jpg'>
-                    <span></span>
-                    <button><a href=''>View more<a></button>
-                </div>
-            </div>
+            <?php
+                $req = "select * from catalog";
+                $res= mysqli_query($conn,$req);
+                while($row=mysqli_fetch_array($res)){
+
+                    echo"
+                        <div class='col_HOME'>
+                            <div class='content_HOME'>
+                                <img src='$row[catalog_image]'>
+                                <span></span>
+                                <button><a href='../Catalog/Catalog.php?catalogId=$row[catalog_id]'>View more</a></button>
+                            </div>
+                        </div>
+                    ";
+                }
+            ?>
         </div>  
         <!---------------------------------------------------------------------->
         <div class='title_HOME'>
@@ -88,7 +70,7 @@
         <div class="BLOG">
             <div class="Parent">
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
                     <div class="Text_Child">
                         <h2>Title</h2>
@@ -102,13 +84,13 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ad optio perspiciatis porro odit dolore impedit quia ratione eaque unde dolor explicabo quasi culpa temporibus magni, similique quae excepturi voluptatibus?</p>
                     </div>
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
             </div>
 
             <div class="Parent">
                     <div class="Pic_Child">
-                        <img src="TEST2.jpg">
+                        <img src="../../assets/HOME_PIC/TEST2.jpg">
                     </div>
                     <div class="Text_Child">
                         <h2>Title</h2>
@@ -116,7 +98,7 @@
                     </div>
             </div>
         </div>
-        <button class="Read_More"><a>Read More &rarr;</a></button>
+        <button class="Read_More"><a href='../blog/blog.php'>Read More &rarr;</a></button>
 
 </body>
 </html>
